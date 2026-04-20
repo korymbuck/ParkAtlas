@@ -2,7 +2,7 @@ const parks = {
   bibe: {
     code: "BIBE",
     name: "Big Bend National Park",
-    location: "Texas",
+    location: "Panther Junction, Texas",
     shortName: "Big Bend",
     link: "https://www.nps.gov/bibe/index.htm",
     drawerSummary:
@@ -187,7 +187,7 @@ const parks = {
   carl: {
     code: "CAVE",
     name: "Carlsbad Caverns National Park",
-    location: "New Mexico",
+    location: "Carlsbad, New Mexico",
     shortName: "Carlsbad Caverns",
     link: "https://www.nps.gov/cave/index.htm",
     drawerSummary:
@@ -393,7 +393,7 @@ const parks = {
   gumo: {
     code: "GUMO",
     name: "Guadalupe Mountains National Park",
-    location: "Texas",
+    location: "Salt Flat, Texas",
     shortName: "Guadalupe Mountains",
     link: "https://www.nps.gov/gumo/index.htm",
     drawerSummary:
@@ -592,7 +592,7 @@ const parks = {
   shen: {
     code: "SHEN",
     name: "Shenandoah National Park",
-    location: "Virginia",
+    location: "Luray, Virginia",
     shortName: "Shenandoah",
     link: "https://www.nps.gov/shen/index.htm",
     drawerSummary:
@@ -708,11 +708,12 @@ const parks = {
         },
       },
       {
-        title: "Skyline Drive turns the whole park into one long unfolding overlook.",
-        body: "The road along the crest gives Shenandoah its narrative shape. Rather than building toward one single monument, the park reveals itself in sequence, with each bend, pullout, and trail access point adding another view into the valleys below.",
-        factLabel: "History note",
-        fact: "Shenandoah was established in 1935, and the scenic road along the ridge helped define how generations of visitors have encountered the Blue Ridge.",
-        scenicLabel: "A high route threading across ridges and open sky",
+        title:
+          "High rock and open ridges give the park some of its clearest, longest views.",
+        body: "On summits and rocky outcrops, Shenandoah sheds some of its haze-softened intimacy and becomes more exposed. These places turn the Blue Ridge into a landscape of stone, wind, and distance, where layered valleys and ridgelines feel both broad and immediate at once.",
+        factLabel: "Landscape note",
+        fact: "Rocky summits and overlooks are part of what gives Shenandoah its range, pairing forested hollows with more exposed high-country views.",
+        scenicLabel: "A rocky summit above layered Blue Ridge ridges",
         image: {
           src: "./assets/SHEN/shenandoah-story-3.jpg",
           alt: "Rock outcrops above rolling Shenandoah ridges in warm light",
@@ -781,6 +782,193 @@ const parks = {
       heroRidgeMid: "#284149",
       heroRidgeFront: "#17252b",
       heroGlow: "rgba(184, 223, 221, 0.24)",
+    },
+  },
+  whsa: {
+    code: "WHSA",
+    name: "White Sands National Park",
+    location: "Alamogordo, New Mexico",
+    shortName: "White Sands",
+    link: "https://www.nps.gov/whsa/index.htm",
+    drawerSummary:
+      "Brilliant gypsum dunes, shifting wind-shaped ridges, white-adapted wildlife, and immense desert light.",
+    hero: {
+      eyebrow: "Featured Park",
+      tagline:
+        "A dune park where an ancient sea becomes brilliant white sand under open desert sky.",
+      landmarkLabel: "White gypsum dunes rolling across the Tularosa Basin",
+      scrollCue: "Scroll to draw the park name out across the dune field",
+      titlePrimarySize: "clamp(3.7rem, 11.2vw, 7.6rem)",
+      titleSecondarySize: "clamp(0.95rem, 2.3vw, 1.7rem)",
+      titleMaxWidth: "58rem",
+      titleOffsetY: "-16vh",
+      titlePrimaryWhiteSpace: "nowrap",
+      titleSecondaryWhiteSpace: "nowrap",
+      media: {
+        background: "./assets/SAND/WhiteSands-hero-background.jpg",
+        backgroundPosition: "center center",
+        foreground: "./assets/SAND/WhiteSands-hero-foreground.png",
+        foregroundWidth: "100%",
+        foregroundHeight: "100%",
+        foregroundBottom: "0",
+        foregroundLeft: "0",
+        foregroundNodeX: "0",
+        foregroundFit: "cover",
+        foregroundPosition: "center center",
+        foregroundTravel: "0vh",
+        foregroundAlt:
+          "White gypsum dunes stretching across White Sands National Park in New Mexico",
+      },
+      highlightTitle:
+        "A national park built from gypsum, wind, basin hydrology, and startling light",
+      highlightBody:
+        "White Sands protects the world's largest gypsum dunefield, a bright and geologically unusual landscape in southern New Mexico. First protected as a national monument in 1933 and redesignated as a national park in 2019, it turns ancient sea deposits, basin water, and constant wind into an active field of white dunes that feels both minimal and immense.",
+      stats: [
+        { label: "Established", value: "2019" },
+        { label: "Landscape", value: "Gypsum dunes" },
+        { label: "Signature", value: "Tularosa Basin" },
+      ],
+    },
+    overview: {
+      title:
+        "A southern New Mexico dune park where gypsum, wind, and basin water keep remaking the land.",
+      body: "At White Sands, the landscape looks simple at first and grows stranger the longer you stay with it. The park protects a wide field of gypsum dunes in the Tularosa Basin, where ancient marine deposits, evaporating water, and prevailing winds continue to build and reshape the white sand. The result is a park of brightness, motion, and distance rather than fixed stone landmarks.",
+      notes: [
+        {
+          title: "Gypsum cycle",
+          text: "Rain and snowmelt wash dissolved gypsum from surrounding mountains into the closed basin, where evaporation and wind help return it to the dunefield as sand.",
+        },
+        {
+          title: "World's largest dunefield of its kind",
+          text: "NPS describes White Sands as the world's largest gypsum dunefield, a rare landscape because gypsum usually dissolves before it can persist as sand.",
+        },
+        {
+          title: "White species and ancient tracks",
+          text: "The dunes support animals that have become lighter in color over time, and the wider basin has also preserved remarkable ancient footprints in the sediments of Lake Otero.",
+        },
+      ],
+    },
+    chapters: [
+      {
+        title:
+          "Its white dunes begin far before the dunes themselves, in an ancient sea and a closed desert basin.",
+        body: "White Sands is a geologic process made visible. Gypsum settled here when the Permian Sea covered the region, and much later water dissolved that mineral from surrounding mountains and carried it into the basin. As lakes shrank and dried, crystals formed, broke apart, and were pushed by wind into the bright, mobile dunes that define the park today.",
+        factLabel: "Geology",
+        fact: "NPS describes White Sands as the world's largest gypsum dunefield, sustained by the hydrologic and climatic cycle of the Tularosa Basin.",
+        scenicLabel: "A young dune field built from ancient marine gypsum",
+        art: {
+          top: "#9db7d4",
+          mid: "#d8d8d0",
+          bottom: "#f2e4cf",
+          orb: "#fff7ea",
+          orbGlow: "rgba(255, 242, 220, 0.28)",
+          haze: "rgba(235, 233, 224, 0.34)",
+          layerA: "#e3dccd",
+          layerB: "#d2c8b7",
+          layerC: "#bda88d",
+          river: "rgba(232, 243, 255, 0.22)",
+          riverOpacity: "0.12",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbRight: "14%",
+          orbTop: "13%",
+        },
+      },
+      {
+        title:
+          "Then the park simplifies into light, curve, and horizon until scale starts to feel abstract.",
+        body: "White Sands does not rely on cliffs or forests to create drama. Its force comes from reduction: dune after dune, wind-smoothed ridges, long shadows, and brilliant surfaces that reflect light differently across the day. That minimalism is what makes the park feel so expansive, because there are fewer visual anchors to stop the eye.",
+        factLabel: "Landscape",
+        fact: "The dunefield is active and dynamic, constantly reshaped by wind into new ridges, slip faces, and lines of shadow.",
+        scenicLabel: "Wind-shaped dunes carrying light into the distance",
+        art: {
+          top: "#b5cbe2",
+          mid: "#e6e0d6",
+          bottom: "#f6ead8",
+          orb: "#fffaf0",
+          orbGlow: "rgba(255, 245, 228, 0.3)",
+          haze: "rgba(247, 242, 233, 0.26)",
+          layerA: "#eee3d3",
+          layerB: "#dccdbb",
+          layerC: "#c4ac92",
+          river: "rgba(255, 255, 255, 0.2)",
+          riverOpacity: "0.06",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbLeft: "18%",
+          orbTop: "12%",
+        },
+      },
+      {
+        title:
+          "Even in a landscape that looks almost empty, the dunes hold adaptation, footprints, and motion.",
+        body: "The park's silence is deceptive. Tracks appear and disappear in the sand, animals move through the cooler hours, and some species here have become lighter in color as the white surroundings favored camouflage over generations. White Sands is also tied to much older human stories preserved in the basin sediments beyond the active dunes, where ancient footprints have reshaped how the place is understood.",
+        factLabel: "Life and time",
+        fact: "NPS highlights both the park's white-adapted species and the ancient footprints of the Lake Otero basin as part of White Sands' broader significance.",
+        scenicLabel: "Tracks and living movement across a bright dune surface",
+        art: {
+          top: "#8fa8c2",
+          mid: "#c8d0d7",
+          bottom: "#efe1cf",
+          orb: "#fff6e9",
+          orbGlow: "rgba(249, 236, 215, 0.22)",
+          haze: "rgba(214, 225, 235, 0.24)",
+          layerA: "#e2d7c8",
+          layerB: "#cdbdaa",
+          layerC: "#b2977b",
+          river: "rgba(220, 235, 248, 0.16)",
+          riverOpacity: "0.08",
+          fallsOpacity: "0",
+          starsOpacity: "0.18",
+          orbRight: "18%",
+          orbTop: "14%",
+        },
+      },
+    ],
+    facts: [
+      {
+        label: "History",
+        title: "Protected first as a monument",
+        text: "White Sands National Monument was established on January 18, 1933, and the site became White Sands National Park on December 20, 2019.",
+      },
+      {
+        label: "Geography",
+        title: "Gypsum, not quartz",
+        text: "Most famous dune landscapes are built from quartz sand, but White Sands is defined by gypsum, a mineral that makes the park brighter, rarer, and geologically distinctive.",
+      },
+      {
+        label: "Scale",
+        title: "Minimalism is the spectacle",
+        text: "What gives White Sands its power is not one isolated feature but repetition and light: rolling white dunes, long horizons, changing shadows, and a sense of openness that feels almost unreal.",
+      },
+    ],
+    cta: {
+      meta: "Trip planning",
+      title: "Open the official White Sands National Park site.",
+      text: "Use the official NPS site for road conditions, weather updates, sledding information, hiking guidance, and planning details before a visit.",
+      label: "Visit White Sands on NPS",
+    },
+    theme: {
+      bgTop: "#0b1118",
+      bgBottom: "#171313",
+      surface: "rgba(16, 18, 22, 0.72)",
+      surfaceStrong: "rgba(18, 21, 26, 0.9)",
+      card: "rgba(245, 238, 227, 0.09)",
+      cardStrong: "rgba(245, 238, 227, 0.14)",
+      line: "rgba(229, 220, 202, 0.16)",
+      text: "#f7f2ea",
+      muted: "#d0c3b3",
+      accent: "#e5c497",
+      accentBright: "#fff1da",
+      accentSecondary: "#b6d3e8",
+      shadow: "rgba(0, 0, 0, 0.34)",
+      heroSkyTop: "#9db7d4",
+      heroSkyBottom: "#e6d9c8",
+      heroHorizon: "rgba(255, 243, 226, 0.54)",
+      heroRidgeBack: "#e4dbcf",
+      heroRidgeMid: "#d4c8b9",
+      heroRidgeFront: "#bba48b",
+      heroGlow: "rgba(255, 241, 217, 0.24)",
     },
   },
 };
@@ -916,6 +1104,12 @@ function renderHeroStage(park) {
     park.hero.titleAlign ? `--hero-title-text-align: ${park.hero.titleAlign};` : "",
     park.hero.titleJustify ? `--hero-title-justify: ${park.hero.titleJustify};` : "",
     park.hero.titleMargin ? `--hero-title-margin: ${park.hero.titleMargin};` : "",
+    park.hero.titlePrimaryWhiteSpace
+      ? `--hero-title-primary-white-space: ${park.hero.titlePrimaryWhiteSpace};`
+      : "",
+    park.hero.titleSecondaryWhiteSpace
+      ? `--hero-title-secondary-white-space: ${park.hero.titleSecondaryWhiteSpace};`
+      : "",
     park.hero.titleStartY ? `--hero-title-start-y: ${park.hero.titleStartY};` : "",
     park.hero.titleTravelY ? `--hero-title-travel-y: ${park.hero.titleTravelY};` : "",
     park.hero.titleTransformOrigin
@@ -1019,7 +1213,7 @@ function renderDrawer() {
 }
 
 function renderMeta(park) {
-  currentParkMeta.innerHTML = `<strong>${park.shortName}</strong>${park.location} · Final CTA links to NPS`;
+  currentParkMeta.innerHTML = `<strong>${park.shortName}</strong>${park.location}`;
 }
 
 function renderPage() {
