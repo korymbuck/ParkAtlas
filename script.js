@@ -14,8 +14,8 @@ const parks = {
       landmarkLabel: "Chisos Mountains under a Big Bend night sky",
       scrollCue: "Scroll to pull the park name out from behind the ridge",
       media: {
-        background: "./assets/big-bend-hero-background.png",
-        foreground: "./assets/big-bend-hero-foreground.png",
+        background: "./assets/BIBE/big-bend-hero-background.png",
+        foreground: "./assets/BIBE/big-bend-hero-foreground.png",
         foregroundTravel: "0vh",
         foregroundAlt:
           "The Chisos Mountains rising across the horizon at Big Bend National Park",
@@ -56,7 +56,7 @@ const parks = {
         fact: "The Chisos form a sky-island range, where higher, cooler ground stands apart from the surrounding desert like an ecological island.",
         scenicLabel: "Chisos light above the desert floor",
         image: {
-          src: "./assets/big-bend-story-1.jpg",
+          src: "./assets/BIBE/big-bend-story-1.jpg",
           alt: "Desert grassland and the Chisos Mountains under a bright cloud-filled sky in Big Bend National Park",
           position: "center center",
         },
@@ -86,7 +86,7 @@ const parks = {
         fact: "The river is both a natural boundary and an older human corridor, tying the park to the wider story of the borderlands.",
         scenicLabel: "Canyon walls catching late desert light",
         image: {
-          src: "./assets/big-bend-story-2.webp",
+          src: "./assets/BIBE/big-bend-story-2.webp",
           alt: "Towering canyon walls reflected in the Rio Grande in Big Bend National Park",
           position: "center center",
         },
@@ -115,7 +115,7 @@ const parks = {
         fact: "Big Bend is widely known for exceptionally dark night skies, one reason the park feels as vast after sunset as it does by day.",
         scenicLabel: "A sky-first view once the desert goes dark",
         image: {
-          src: "./assets/big-bend-story-3.jpg",
+          src: "./assets/BIBE/big-bend-story-3.jpg",
           alt: "The Milky Way rising above silhouetted mountains in Big Bend National Park",
           position: "center center",
         },
@@ -184,6 +184,411 @@ const parks = {
       heroGlow: "rgba(255, 182, 112, 0.28)",
     },
   },
+  carl: {
+    code: "CAVE",
+    name: "Carlsbad Caverns National Park",
+    location: "New Mexico",
+    shortName: "Carlsbad Caverns",
+    link: "https://www.nps.gov/cave/index.htm",
+    drawerSummary:
+      "Immense cave chambers, sulfuric-acid geology, bat flights, and desert country above the reef.",
+    hero: {
+      eyebrow: "Featured Park",
+      tagline:
+        "A cave park where desert surface gives way to vast underground chambers and mineral forms.",
+      landmarkLabel: "The natural entrance and cavern system beneath the Chihuahuan Desert",
+      scrollCue: "Scroll to draw the park name down from the cavern ceiling",
+      titlePrimarySize: "clamp(3.3rem, 10vw, 6.6rem)",
+      titleSecondarySize: "clamp(0.95rem, 2.3vw, 1.65rem)",
+      titleMaxWidth: "60rem",
+      titleOffsetY: "0vh",
+      titleAlign: "left",
+      titleJustify: "start",
+      titleMargin: "0 auto 0 clamp(3rem, 6vw, 5.5rem)",
+      titleStartY: "-54vh",
+      titleTravelY: "50vh",
+      titleTransformOrigin: "left top",
+      media: {
+        background: "./assets/CARL/CarlsbadCavern.jpg",
+        backgroundPosition: "center center",
+        foreground: "./assets/CARL/carlsbad-hero-foreground.png",
+        foregroundWidth: "100%",
+        foregroundHeight: "100%",
+        foregroundBottom: "0",
+        foregroundLeft: "0",
+        foregroundNodeX: "0",
+        foregroundFit: "cover",
+        foregroundPosition: "center center",
+        foregroundTravel: "0vh",
+        foregroundAlt:
+          "The natural entrance area and cavern landscape at Carlsbad Caverns National Park",
+      },
+      highlightTitle:
+        "A national park defined as much by what lies underground as what rises above it",
+      highlightBody:
+        "Protected first as a national monument in 1923 and redesignated as a national park in 1930, Carlsbad Caverns preserves more than 119 known caves in the Guadalupe Mountains. Its central story is subterranean: sulfuric acid dissolved limestone into immense chambers later decorated with stalactites, stalagmites, and other formations, while the natural entrance and evening bat flights tie the underground world back to the desert surface.",
+      stats: [
+        { label: "Established", value: "1930" },
+        { label: "Signature", value: "Big Room" },
+        { label: "Formation", value: "Sulfuric acid" },
+      ],
+    },
+    overview: {
+      title:
+        "A Guadalupe Mountains cave park where ancient reef rock opens into huge underground space.",
+      body: "Carlsbad Caverns sits in the Chihuahuan Desert of southeastern New Mexico, but its most powerful landscape is below the surface. The park protects a cave system carved through ancient reef limestone, plus desert slopes, canyons, and wildlife above ground. That contrast is what makes the park distinct: hard sun and open country outside, cool darkness and immense mineral architecture below.",
+      notes: [
+        {
+          title: "Sulfuric-acid cave origin",
+          text: "Unlike caves formed mainly by rainwater, Carlsbad Cavern and its neighboring caves were shaped when sulfuric acid dissolved limestone deep underground.",
+        },
+        {
+          title: "The Big Room",
+          text: "The park's best-known chamber is the Big Room, a cave space so large it reads less like a tunnel and more like an underground landscape.",
+        },
+        {
+          title: "Bat flight",
+          text: "Seasonal evening bat flights at the natural entrance remain one of the park's defining experiences, linking the cavern to the sky above it.",
+        },
+      ],
+    },
+    chapters: [
+      {
+        title:
+          "Its most important landscape is hidden: ancient reef limestone dissolved into enormous chambers below the desert.",
+        body: "Carlsbad Caverns begins with geology that most visitors never see directly. In the Guadalupe Mountains, reef rock laid down by an inland sea was later altered underground, where sulfuric acid dissolved limestone and opened passageways, voids, and chambers on a scale that still feels improbable once you step inside.",
+        factLabel: "Geology",
+        fact: "The park protects more than 119 known caves, and NPS describes their origin as the result of sulfuric acid dissolving limestone rather than the more familiar rainwater cave process.",
+        scenicLabel: "Ancient reef rock opening into underground space",
+        image: {
+          src: "./assets/CARL/carlsbad-story-1.jpg",
+          alt: "A cave chamber in Carlsbad Caverns with mineral formations and shadowed stone",
+          position: "center center",
+        },
+        art: {
+          top: "#060910",
+          mid: "#201c1c",
+          bottom: "#6d5646",
+          orb: "#f1d9a7",
+          orbGlow: "rgba(230, 197, 136, 0.24)",
+          haze: "rgba(154, 121, 92, 0.22)",
+          layerA: "#56473e",
+          layerB: "#312722",
+          layerC: "#171314",
+          river: "rgba(233, 220, 192, 0.06)",
+          riverOpacity: "0.05",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbRight: "18%",
+          orbTop: "16%",
+        },
+      },
+      {
+        title:
+          "Inside the Big Room, underground space stops feeling enclosed and starts feeling monumental.",
+        body: "One reason Carlsbad Caverns stays in memory is that it overturns expectations of scale. The Big Room is not simply a cave passage enlarged; it is a chamber broad enough to feel almost civic in size, filled with formations, shadows, and floor features that make the underground world read as architecture and landscape at once.",
+        factLabel: "Scale",
+        fact: "The Big Room is described by the National Park Service as the largest single cave chamber by volume in North America.",
+        scenicLabel: "Mineral forms spread across a vast cave chamber",
+        image: {
+          src: "./assets/CARL/carlsbad-story-2.jpg",
+          alt: "The Big Room at Carlsbad Caverns with formations rising from the cave floor",
+          position: "center center",
+        },
+        art: {
+          top: "#090b12",
+          mid: "#2b231f",
+          bottom: "#8a694f",
+          orb: "#f5dfb8",
+          orbGlow: "rgba(237, 213, 173, 0.2)",
+          haze: "rgba(192, 160, 126, 0.18)",
+          layerA: "#705947",
+          layerB: "#41322a",
+          layerC: "#221b19",
+          river: "rgba(222, 213, 188, 0.08)",
+          riverOpacity: "0.08",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbLeft: "16%",
+          orbTop: "14%",
+        },
+      },
+      {
+        title:
+          "At dusk, the park reverses direction and the cavern pours living movement back into the sky.",
+        body: "Carlsbad is not only a story of stone. In warmer seasons, Brazilian free-tailed bats rise from the natural entrance in evening waves, turning the cave mouth into one of the park's most famous scenes. It is a reminder that the cavern is part of a larger desert system, connected to weather, insects, migration, and nightfall.",
+        factLabel: "Wildlife",
+        fact: "The park's most famous mammals are its bats, and the evening Bat Flight Program is one of Carlsbad Caverns' best-known visitor experiences.",
+        scenicLabel: "The cavern mouth opening onto a darkening desert sky",
+        image: {
+          src: "./assets/CARL/carlsbad-story-3.jpg",
+          alt: "The natural entrance area at Carlsbad Caverns opening toward the desert sky",
+          position: "center center",
+        },
+        art: {
+          top: "#0b1220",
+          mid: "#25354a",
+          bottom: "#5a473d",
+          orb: "#e8d8be",
+          orbGlow: "rgba(221, 211, 194, 0.16)",
+          haze: "rgba(113, 139, 176, 0.18)",
+          layerA: "#4a5564",
+          layerB: "#2a313a",
+          layerC: "#181d23",
+          river: "rgba(162, 176, 201, 0.12)",
+          riverOpacity: "0.1",
+          fallsOpacity: "0",
+          starsOpacity: "0.7",
+          orbRight: "20%",
+          orbTop: "12%",
+        },
+      },
+    ],
+    facts: [
+      {
+        label: "History",
+        title: "Protected in two steps",
+        text: "Carlsbad Cave National Monument was created on October 25, 1923, and Congress redesignated it as Carlsbad Caverns National Park on May 14, 1930.",
+      },
+      {
+        label: "Geology",
+        title: "A cave park built from reef limestone",
+        text: "The park's caverns lie within the ancient Capitan Reef of the Guadalupe Mountains, linking Carlsbad directly to the same deep geologic story visible above ground at nearby Guadalupe Mountains National Park.",
+      },
+      {
+        label: "Scale",
+        title: "Above and below are one landscape",
+        text: "What gives Carlsbad its power is the contrast between desert surface and cavern depth: open sky, rocky canyons, and cactus above; darkness, mineral decoration, and huge chambers below.",
+      },
+    ],
+    cta: {
+      meta: "Trip planning",
+      title: "Open the official Carlsbad Caverns National Park site.",
+      text: "Use the official NPS site for timed-entry information, cavern access details, bat flight updates, and the planning basics before a visit.",
+      label: "Visit Carlsbad Caverns on NPS",
+    },
+    theme: {
+      bgTop: "#05070d",
+      bgBottom: "#130f10",
+      surface: "rgba(14, 15, 18, 0.72)",
+      surfaceStrong: "rgba(16, 18, 22, 0.9)",
+      card: "rgba(242, 231, 214, 0.08)",
+      cardStrong: "rgba(242, 231, 214, 0.12)",
+      line: "rgba(222, 201, 173, 0.16)",
+      text: "#f4eee5",
+      muted: "#c6b8a8",
+      accent: "#d79b62",
+      accentBright: "#f0dfbb",
+      accentSecondary: "#88a7b2",
+      shadow: "rgba(0, 0, 0, 0.38)",
+      heroSkyTop: "#10141d",
+      heroSkyBottom: "#6a4c39",
+      heroHorizon: "rgba(228, 188, 140, 0.42)",
+      heroRidgeBack: "#6b5747",
+      heroRidgeMid: "#3e3027",
+      heroRidgeFront: "#211917",
+      heroGlow: "rgba(224, 190, 141, 0.2)",
+    },
+  },
+  gumo: {
+    code: "GUMO",
+    name: "Guadalupe Mountains National Park",
+    location: "Texas",
+    shortName: "Guadalupe Mountains",
+    link: "https://www.nps.gov/gumo/index.htm",
+    drawerSummary:
+      "Ancient reef limestone, Texas high peaks, desert basins, and canyons with hidden water.",
+    hero: {
+      eyebrow: "Featured Park",
+      tagline:
+        "A mountain park where an ancient reef rises straight out of the Chihuahuan Desert.",
+      landmarkLabel: "El Capitan and the Guadalupe range above the desert floor",
+      scrollCue: "Scroll to bring the reef-built range into view",
+      titlePrimarySize: "clamp(2.7rem, 8.8vw, 6.2rem)",
+      titleSecondarySize: "clamp(0.9rem, 2vw, 1.55rem)",
+      titleMaxWidth: "68rem",
+      titleOffsetY: "-4vh",
+      titleAlign: "left",
+      titleJustify: "start",
+      titleMargin: "0 auto 0 clamp(1.5rem, 4vw, 3.5rem)",
+      media: {
+        background: "./assets/GUMO/guadalupe-hero-background.jpg",
+        backgroundPosition: "center center",
+        foreground: "./assets/GUMO/guadalupe-hero-foreground.png",
+        foregroundWidth: "min(128vw, 110rem)",
+        foregroundHeight: "auto",
+        foregroundBottom: "-42%",
+        foregroundTravel: "0vh",
+        foregroundAlt:
+          "The Guadalupe Mountains rising above the desert floor in West Texas",
+      },
+      highlightTitle:
+        "An exposed fossil reef turned into the highest mountains in Texas",
+      highlightBody:
+        "Formally established in 1972, Guadalupe Mountains protects the world's most extensive Permian fossil reef, the four highest peaks in Texas, and a dramatic transition from desert floor to high-country forest. The park feels abrupt and vertical, with limestone walls, wind-shaped ridges, and canyons that hide water and color inside an otherwise arid landscape.",
+      stats: [
+        { label: "Established", value: "1972" },
+        { label: "High point", value: "Guadalupe Peak" },
+        { label: "Signature", value: "Permian reef" },
+      ],
+    },
+    overview: {
+      title:
+        "A West Texas mountain park where reef limestone, desert basins, and sheltered canyons share one skyline.",
+      body: "Just south of the New Mexico line, the Guadalupe range rises more than 3,000 feet above the Chihuahuan Desert. What looks like a hard mountain wall is also deep geologic time made visible: an ancient marine reef now lifted, eroded, and exposed as cliffs, summits, and canyon walls. Guadalupe Mountains carries that dual identity everywhere, balancing desert openness with unexpectedly lush pockets like McKittrick Canyon.",
+      notes: [
+        {
+          title: "Capitan Reef",
+          text: "The range is one of the best exposed sections of the ancient Permian reef complex, making the park as much a geologic landmark as a scenic one.",
+        },
+        {
+          title: "Texas high country",
+          text: "Guadalupe Peak is the highest point in Texas, and the park protects the state's four highest summits along the same limestone backbone.",
+        },
+        {
+          title: "McKittrick Canyon",
+          text: "Inside a harsh desert setting, the canyon shelters a riparian corridor known for shade, seasonal color, and a different, more intimate scale of experience.",
+        },
+      ],
+    },
+    chapters: [
+      {
+        title:
+          "From the basin, the mountains look less like rolling uplands than a lifted wall of reef limestone.",
+        body: "Guadalupe Mountains announces itself with abrupt relief. El Capitan and the surrounding escarpment rise sharply above the desert floor, making the range feel like a geologic edge rather than a gradual climb. That visual force comes from the park's ancient reef rock, now exposed as cliffs, ledges, and pale stone faces.",
+        factLabel: "Geology",
+        fact: "The park protects the world's most extensive Permian fossil reef, one of its defining natural values and the reason the range reads so clearly in profile.",
+        scenicLabel: "Reef-built ridges catching late desert light",
+        image: {
+          src: "./assets/GUMO/guadalupe-story-1.jpg",
+          alt: "The Guadalupe Mountains rising in warm light above the desert basin",
+          position: "center center",
+        },
+        art: {
+          top: "#0f1721",
+          mid: "#5b4736",
+          bottom: "#d3a06a",
+          orb: "#ffe0a2",
+          orbGlow: "rgba(255, 204, 132, 0.34)",
+          haze: "rgba(240, 186, 125, 0.26)",
+          layerA: "#8c6a4c",
+          layerB: "#4e3929",
+          layerC: "#231a14",
+          river: "rgba(245, 225, 180, 0.08)",
+          riverOpacity: "0.08",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbRight: "14%",
+          orbTop: "12%",
+        },
+      },
+      {
+        title:
+          "Then the range folds inward, and dry West Texas gives way to a protected canyon oasis.",
+        body: "McKittrick Canyon changes the park's texture. Instead of exposed desert slopes and skyline views, the canyon gathers streamside vegetation, shade, and seasonal color behind high walls. That contrast is part of Guadalupe Mountains' character: hard, open country outside; sheltered life and movement inside.",
+        factLabel: "Landscape",
+        fact: "McKittrick Canyon is one of the park's sharpest contrasts, especially when fall color lights up a canyon otherwise surrounded by desert.",
+        scenicLabel: "A hidden canyon corridor carrying water and color",
+        image: {
+          src: "./assets/GUMO/guadalupe-story-2.jpeg",
+          alt: "A sheltered Guadalupe canyon with trees and rocky walls",
+          position: "center center",
+        },
+        art: {
+          top: "#152027",
+          mid: "#46604d",
+          bottom: "#b58b58",
+          orb: "#f3db9a",
+          orbGlow: "rgba(240, 202, 130, 0.22)",
+          haze: "rgba(157, 196, 163, 0.22)",
+          layerA: "#627b5f",
+          layerB: "#39513c",
+          layerC: "#1d2d23",
+          river: "rgba(152, 205, 197, 0.74)",
+          riverOpacity: "0.68",
+          fallsOpacity: "0.24",
+          starsOpacity: "0",
+          orbLeft: "16%",
+          orbTop: "14%",
+        },
+      },
+      {
+        title:
+          "Above the canyons, the park returns to wind, exposure, and long-distance horizon.",
+        body: "Higher in the range, Guadalupe Mountains becomes a park of ridgelines, wilderness, and elevation. Reaching Guadalupe Peak means leaving the basin behind and stepping onto one of Texas' most expansive vantage points, where the desert, surrounding ranges, and huge sky all read at once.",
+        factLabel: "High country",
+        fact: "Guadalupe Peak is the highest point in Texas, and the park's wilderness character is central to how that elevation is experienced: exposed, quiet, and far-reaching.",
+        scenicLabel: "High limestone country under a wind-cleared sky",
+        image: {
+          src: "./assets/GUMO/guadalupe-story-3.jpg",
+          alt: "High ridgelines and open sky in Guadalupe Mountains National Park",
+          position: "center center",
+        },
+        art: {
+          top: "#09121e",
+          mid: "#314b63",
+          bottom: "#9eb0b6",
+          orb: "#f7e5c0",
+          orbGlow: "rgba(240, 226, 197, 0.24)",
+          haze: "rgba(182, 205, 214, 0.2)",
+          layerA: "#7e8f95",
+          layerB: "#4d6270",
+          layerC: "#283642",
+          river: "rgba(210, 227, 233, 0.12)",
+          riverOpacity: "0.12",
+          fallsOpacity: "0",
+          starsOpacity: "0.24",
+          orbRight: "18%",
+          orbTop: "15%",
+        },
+      },
+    ],
+    facts: [
+      {
+        label: "History",
+        title: "Authorized first, established later",
+        text: "Congress authorized Guadalupe Mountains in 1966, and the park was formally established on September 30, 1972 after key lands were assembled for protection.",
+      },
+      {
+        label: "Geography",
+        title: "A reef turned mountain range",
+        text: "The cliffs and peaks here are exposed limestone from the ancient Capitan Reef, making the park one of North America's most vivid places to see deep geologic time become landscape.",
+      },
+      {
+        label: "Scale",
+        title: "Abrupt relief defines the experience",
+        text: "More than almost anything else, visitors remember how suddenly the range rises from the desert and how much variety fits between the basin floor, canyon oases, and high ridgelines.",
+      },
+    ],
+    cta: {
+      meta: "Trip planning",
+      title: "Open the official Guadalupe Mountains National Park site.",
+      text: "Use the official NPS site for trail conditions, weather, camping details, and the logistics that matter in a remote high-desert park.",
+      label: "Visit Guadalupe Mountains on NPS",
+    },
+    theme: {
+      bgTop: "#071015",
+      bgBottom: "#140d0b",
+      surface: "rgba(13, 16, 19, 0.72)",
+      surfaceStrong: "rgba(15, 19, 22, 0.9)",
+      card: "rgba(244, 233, 214, 0.08)",
+      cardStrong: "rgba(244, 233, 214, 0.12)",
+      line: "rgba(229, 207, 172, 0.16)",
+      text: "#f5efe5",
+      muted: "#cbbca7",
+      accent: "#dba15f",
+      accentBright: "#f5dfb4",
+      accentSecondary: "#8db7af",
+      shadow: "rgba(0, 0, 0, 0.36)",
+      heroSkyTop: "#101822",
+      heroSkyBottom: "#6d4b35",
+      heroHorizon: "rgba(235, 191, 132, 0.46)",
+      heroRidgeBack: "#725842",
+      heroRidgeMid: "#463426",
+      heroRidgeFront: "#241a13",
+      heroGlow: "rgba(237, 186, 127, 0.24)",
+    },
+  },
   shen: {
     code: "SHEN",
     name: "Shenandoah National Park",
@@ -203,9 +608,9 @@ const parks = {
       titleMaxWidth: "54rem",
       titleOffsetY: "-7vh",
       media: {
-        background: "./assets/shenandoah-hero-background.jpg",
+        background: "./assets/SHEN/shenandoah-hero-background.jpg",
         backgroundPosition: "center top",
-        foreground: "./assets/shenandoah-hero-foreground.png",
+        foreground: "./assets/SHEN/shenandoah-hero-foreground.png",
         foregroundWidth: "min(132vw, 112rem)",
         foregroundHeight: "auto",
         foregroundTravel: "0vh",
@@ -250,7 +655,7 @@ const parks = {
         fact: "The park follows a long stretch of the Blue Ridge, where elevation, atmosphere, and distance create the mountains' famous blue tone.",
         scenicLabel: "Blue Ridge layers carrying into the horizon",
         image: {
-          src: "./assets/shenandoah-story-1.webp",
+          src: "./assets/SHEN/shenandoah-story-1.webp",
           alt: "Layered Shenandoah ridges with low clouds and mist filling the valley",
           position: "center center",
         },
@@ -280,7 +685,7 @@ const parks = {
         fact: "Waterfall hikes give the park a second scale, trading broad ridgelines for ravines, stream valleys, and close forest detail.",
         scenicLabel: "Cool forest light near one of the park’s cascades",
         image: {
-          src: "./assets/shenandoah-story-2.jpg",
+          src: "./assets/SHEN/shenandoah-story-2.jpg",
           alt: "A hiker standing in a forest stream beside a small Shenandoah waterfall",
           position: "center center",
         },
@@ -309,7 +714,7 @@ const parks = {
         fact: "Shenandoah was established in 1935, and the scenic road along the ridge helped define how generations of visitors have encountered the Blue Ridge.",
         scenicLabel: "A high route threading across ridges and open sky",
         image: {
-          src: "./assets/shenandoah-story-3.jpg",
+          src: "./assets/SHEN/shenandoah-story-3.jpg",
           alt: "Rock outcrops above rolling Shenandoah ridges in warm light",
           position: "center center",
         },
@@ -508,6 +913,14 @@ function renderHeroStage(park) {
       : "",
     park.hero.titleMaxWidth ? `--hero-title-max-width: ${park.hero.titleMaxWidth};` : "",
     park.hero.titleOffsetY ? `--hero-title-offset-y: ${park.hero.titleOffsetY};` : "",
+    park.hero.titleAlign ? `--hero-title-text-align: ${park.hero.titleAlign};` : "",
+    park.hero.titleJustify ? `--hero-title-justify: ${park.hero.titleJustify};` : "",
+    park.hero.titleMargin ? `--hero-title-margin: ${park.hero.titleMargin};` : "",
+    park.hero.titleStartY ? `--hero-title-start-y: ${park.hero.titleStartY};` : "",
+    park.hero.titleTravelY ? `--hero-title-travel-y: ${park.hero.titleTravelY};` : "",
+    park.hero.titleTransformOrigin
+      ? `--hero-title-transform-origin: ${park.hero.titleTransformOrigin};`
+      : "",
   ]
     .filter(Boolean)
     .join(" ");
@@ -526,6 +939,10 @@ function renderHeroStage(park) {
     const foregroundHeight =
       park.hero.media.foregroundHeight || "clamp(18rem, 42vh, 28rem)";
     const foregroundBottom = park.hero.media.foregroundBottom || "-2%";
+    const foregroundLeft = park.hero.media.foregroundLeft || "50%";
+    const foregroundNodeX = park.hero.media.foregroundNodeX || "-50%";
+    const foregroundFit = park.hero.media.foregroundFit || "contain";
+    const foregroundPosition = park.hero.media.foregroundPosition || "center center";
     const foregroundTravel = park.hero.media.foregroundTravel || "14vh";
 
     return `
@@ -547,7 +964,7 @@ function renderHeroStage(park) {
           data-parallax-speed="0.08"
           src="${park.hero.media.foreground}"
           alt="${park.hero.media.foregroundAlt}"
-          style="--hero-foreground-width: ${foregroundWidth}; --hero-foreground-height: ${foregroundHeight}; --hero-foreground-bottom: ${foregroundBottom}; --hero-foreground-travel: ${foregroundTravel};"
+          style="--hero-foreground-width: ${foregroundWidth}; --hero-foreground-height: ${foregroundHeight}; --hero-foreground-bottom: ${foregroundBottom}; --hero-foreground-left: ${foregroundLeft}; --hero-foreground-node-x: ${foregroundNodeX}; --hero-foreground-fit: ${foregroundFit}; --hero-foreground-position: ${foregroundPosition}; --hero-foreground-travel: ${foregroundTravel};"
         />
         <span class="hero-scroll-cue">${park.hero.scrollCue}</span>
       </div>

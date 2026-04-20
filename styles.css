@@ -520,17 +520,25 @@ button {
 
 .hero-title-wrap {
   width: min(100%, var(--hero-title-max-width, 62rem));
-  margin: 0 auto;
+  margin: var(--hero-title-margin, 0 auto);
   display: grid;
-  justify-items: center;
-  text-align: center;
+  justify-items: var(--hero-title-justify, center);
+  text-align: var(--hero-title-text-align, center);
   min-height: clamp(8rem, 18vh, 11rem);
   padding-bottom: clamp(2rem, 5vh, 3.25rem);
   opacity: clamp(0, calc((var(--hero-progress, 0) - 0.08) * 2.2), 1);
   transform:
-    translate3d(0, calc(24vh - (var(--hero-progress, 0) * 46vh) + var(--hero-title-offset-y, 0vh)), 0)
+    translate3d(
+      0,
+      calc(
+        var(--hero-title-start-y, 24vh) +
+          (var(--hero-progress, 0) * var(--hero-title-travel-y, -46vh)) +
+          var(--hero-title-offset-y, 0vh)
+      ),
+      0
+    )
     scale(calc(0.94 + (var(--hero-progress, 0) * 0.08)));
-  transform-origin: center bottom;
+  transform-origin: var(--hero-title-transform-origin, center bottom);
 }
 
 .hero-title {
@@ -560,15 +568,17 @@ button {
 
 .hero-foreground-image {
   position: absolute;
-  left: 50%;
+  left: var(--hero-foreground-left, 50%);
   bottom: var(--hero-foreground-bottom, -2%);
   z-index: 3;
   width: var(--hero-foreground-width, auto);
   height: var(--hero-foreground-height, clamp(18rem, 42vh, 28rem));
   max-width: none;
+  object-fit: var(--hero-foreground-fit, contain);
+  object-position: var(--hero-foreground-position, center center);
   pointer-events: none;
   filter: drop-shadow(0 16px 34px rgba(0, 0, 0, 0.28));
-  --node-x: -50%;
+  --node-x: var(--hero-foreground-node-x, -50%);
   --node-y: calc(var(--hero-progress, 0) * var(--hero-foreground-travel, 14vh));
   --node-scale: calc(1.01 - (var(--hero-progress, 0) * 0.02));
 }
@@ -963,11 +973,17 @@ button {
   }
 
   .hero-title-primary {
-    font-size: clamp(4.2rem, 14vw, 8rem);
+    font-size: min(
+      var(--hero-title-primary-size, clamp(5rem, 15vw, 11rem)),
+      clamp(4.2rem, 14vw, 8rem)
+    );
   }
 
   .hero-title-secondary {
-    font-size: clamp(1rem, 2.8vw, 1.8rem);
+    font-size: min(
+      var(--hero-title-secondary-size, clamp(1.05rem, 2.8vw, 2.25rem)),
+      clamp(1rem, 2.8vw, 1.8rem)
+    );
   }
 
   .hero-foreground-image {
@@ -1025,12 +1041,18 @@ button {
   }
 
   .hero-title-primary {
-    font-size: clamp(3.5rem, 20vw, 5.5rem);
+    font-size: min(
+      var(--hero-title-primary-size, clamp(5rem, 15vw, 11rem)),
+      clamp(3.5rem, 20vw, 5.5rem)
+    );
   }
 
   .hero-title-secondary {
     margin-top: 0.25rem;
-    font-size: 0.86rem;
+    font-size: min(
+      var(--hero-title-secondary-size, clamp(1.05rem, 2.8vw, 2.25rem)),
+      0.86rem
+    );
     letter-spacing: 0.28em;
     text-indent: 0.28em;
   }
