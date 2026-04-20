@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A cinematic national parks experience featuring Big Bend and Shenandoah."
+    />
+    <title>Park Atlas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <div class="ambient ambient-a" aria-hidden="true"></div>
+      <div class="ambient ambient-b" aria-hidden="true"></div>
+      <div class="ambient ambient-c" aria-hidden="true"></div>
+
+      <aside class="park-drawer" id="parkDrawer" aria-hidden="true">
+        <div class="drawer-header">
+          <p class="eyebrow">Park Index</p>
+          <div class="drawer-title-row">
+            <h2>Choose a park</h2>
+            <button class="drawer-close" id="drawerClose" type="button" aria-label="Close park menu">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <p class="drawer-copy">
+            Starting collection. Parks appear in alphabetical order, with Big Bend and Shenandoah
+            available now.
+          </p>
+        </div>
+        <nav class="park-list" id="parkList" aria-label="National parks"></nav>
+      </aside>
+
+      <button class="drawer-backdrop" id="drawerBackdrop" type="button" hidden aria-label="Close park menu"></button>
+
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="parkDrawer">
+          <span class="menu-button-line"></span>
+          <span class="menu-button-line"></span>
+          Parks
+        </button>
+
+        <div class="brand-lockup">
+          <p class="brand-kicker">Park Atlas</p>
+          <p class="brand-note">Cinematic national park stories</p>
+        </div>
+
+        <div class="current-park-meta" id="currentParkMeta" aria-live="polite"></div>
+      </header>
+
+      <main id="app"></main>
+    </div>
+
+    <noscript>
+      <div class="noscript-banner">
+        JavaScript is required for the interactive park selector and scroll effects.
+      </div>
+    </noscript>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
