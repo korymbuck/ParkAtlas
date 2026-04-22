@@ -1104,6 +1104,11 @@ const parks = {
         factLabel: "Geology",
         fact: "NPS notes that Black Canyon exposes nearly two-billion-year-old Precambrian basement rocks, one of the strongest parts of the park's geologic story.",
         scenicLabel: "Ancient dark canyon walls cut by the Gunnison River",
+        image: {
+          src: "./assets/BLCA/blackcanyon-story-1.webp",
+          alt: "Dark canyon walls and steep rock formations in Black Canyon of the Gunnison National Park",
+          position: "center center",
+        },
         art: {
           top: "#111827",
           mid: "#4a5962",
@@ -1129,6 +1134,11 @@ const parks = {
         factLabel: "River",
         fact: "NPS lists the Gunnison River's average descent over the canyon's full length as 43 feet per mile.",
         scenicLabel: "A steep river corridor far below the canyon rim",
+        image: {
+          src: "./assets/BLCA/blackcanyon-story-2.avif",
+          alt: "The Gunnison River corridor running below the steep walls of Black Canyon",
+          position: "center center",
+        },
         art: {
           top: "#0c1422",
           mid: "#3f4a52",
@@ -1154,6 +1164,11 @@ const parks = {
         factLabel: "Ecology",
         fact: "NPS describes habitats from pinyon-juniper forest and Gambel oak woodland to inner canyon and riparian communities along the Gunnison River.",
         scenicLabel: "Rim woodland, shadowed cliffs, and open Colorado sky",
+        image: {
+          src: "./assets/BLCA/blackcanyon-story-3.jpg",
+          alt: "Rim woodland and canyon country under open sky at Black Canyon of the Gunnison",
+          position: "center center",
+        },
         art: {
           top: "#08111d",
           mid: "#35463f",
@@ -2260,9 +2275,21 @@ const HOME_THEME = {
   heroGlow: "rgba(255, 202, 132, 0.24)",
 };
 
+const COLOR_MODE_STORAGE_KEY = "parkAtlasColorMode";
+
+function getInitialColorMode() {
+  try {
+    return window.localStorage.getItem(COLOR_MODE_STORAGE_KEY) === "light" ? "light" : "dark";
+  } catch {
+    return "dark";
+  }
+}
+
 const state = {
   activeParkKey: null,
   drawerOpen: false,
+  currentTheme: HOME_THEME,
+  colorMode: getInitialColorMode(),
 };
 
 const app = document.getElementById("app");
@@ -2273,34 +2300,83 @@ const menuButton = document.getElementById("menuButton");
 const homeButton = document.getElementById("homeButton");
 const drawerClose = document.getElementById("drawerClose");
 const currentParkMeta = document.getElementById("currentParkMeta");
+const themeToggle = document.getElementById("themeToggle");
 
 let parallaxNodes = [];
 let heroSection = null;
 let animationQueued = false;
 const HERO_REVEAL_END = 0.78;
 
+function getAppliedTheme(theme) {
+  if (state.colorMode !== "light") {
+    return theme;
+  }
+
+  return {
+    ...theme,
+    bgTop: "#fbf4e8",
+    bgBottom: "#deebe6",
+    surface: "rgba(255, 252, 245, 0.78)",
+    surfaceStrong: "rgba(255, 255, 255, 0.94)",
+    card: "rgba(255, 255, 255, 0.68)",
+    cardStrong: "rgba(255, 255, 255, 0.86)",
+    line: "rgba(43, 56, 52, 0.16)",
+    text: "#17201d",
+    muted: "#5e6b64",
+    accentBright: theme.accent,
+    shadow: "rgba(28, 38, 35, 0.22)",
+  };
+}
+
+function updateThemeToggle() {
+  const isLightMode = state.colorMode === "light";
+  const nextMode = isLightMode ? "Dark mode" : "Light mode";
+
+  themeToggle.textContent = nextMode;
+  themeToggle.setAttribute("aria-label", `Current mode: ${state.colorMode}. Switch to ${nextMode.toLowerCase()}`);
+  themeToggle.setAttribute("aria-pressed", String(isLightMode));
+}
+
 function setTheme(theme) {
   const root = document.documentElement;
-  root.style.setProperty("--bg-top", theme.bgTop);
-  root.style.setProperty("--bg-bottom", theme.bgBottom);
-  root.style.setProperty("--surface", theme.surface);
-  root.style.setProperty("--surface-strong", theme.surfaceStrong);
-  root.style.setProperty("--card", theme.card);
-  root.style.setProperty("--card-strong", theme.cardStrong);
-  root.style.setProperty("--line", theme.line);
-  root.style.setProperty("--text", theme.text);
-  root.style.setProperty("--muted", theme.muted);
-  root.style.setProperty("--accent", theme.accent);
-  root.style.setProperty("--accent-bright", theme.accentBright);
-  root.style.setProperty("--accent-secondary", theme.accentSecondary);
-  root.style.setProperty("--shadow", theme.shadow);
-  root.style.setProperty("--hero-sky-top", theme.heroSkyTop);
-  root.style.setProperty("--hero-sky-bottom", theme.heroSkyBottom);
-  root.style.setProperty("--hero-horizon", theme.heroHorizon);
-  root.style.setProperty("--hero-ridge-back", theme.heroRidgeBack);
-  root.style.setProperty("--hero-ridge-mid", theme.heroRidgeMid);
-  root.style.setProperty("--hero-ridge-front", theme.heroRidgeFront);
-  root.style.setProperty("--hero-glow", theme.heroGlow);
+  const appliedTheme = getAppliedTheme(theme);
+
+  state.currentTheme = theme;
+  document.body.classList.toggle("light-mode", state.colorMode === "light");
+  root.style.setProperty("color-scheme", state.colorMode);
+  root.style.setProperty("--bg-top", appliedTheme.bgTop);
+  root.style.setProperty("--bg-bottom", appliedTheme.bgBottom);
+  root.style.setProperty("--surface", appliedTheme.surface);
+  root.style.setProperty("--surface-strong", appliedTheme.surfaceStrong);
+  root.style.setProperty("--card", appliedTheme.card);
+  root.style.setProperty("--card-strong", appliedTheme.cardStrong);
+  root.style.setProperty("--line", appliedTheme.line);
+  root.style.setProperty("--text", appliedTheme.text);
+  root.style.setProperty("--muted", appliedTheme.muted);
+  root.style.setProperty("--accent", appliedTheme.accent);
+  root.style.setProperty("--accent-bright", appliedTheme.accentBright);
+  root.style.setProperty("--accent-secondary", appliedTheme.accentSecondary);
+  root.style.setProperty("--shadow", appliedTheme.shadow);
+  root.style.setProperty("--hero-sky-top", appliedTheme.heroSkyTop);
+  root.style.setProperty("--hero-sky-bottom", appliedTheme.heroSkyBottom);
+  root.style.setProperty("--hero-horizon", appliedTheme.heroHorizon);
+  root.style.setProperty("--hero-ridge-back", appliedTheme.heroRidgeBack);
+  root.style.setProperty("--hero-ridge-mid", appliedTheme.heroRidgeMid);
+  root.style.setProperty("--hero-ridge-front", appliedTheme.heroRidgeFront);
+  root.style.setProperty("--hero-glow", appliedTheme.heroGlow);
+  updateThemeToggle();
+}
+
+function toggleColorMode() {
+  state.colorMode = state.colorMode === "dark" ? "light" : "dark";
+
+  try {
+    window.localStorage.setItem(COLOR_MODE_STORAGE_KEY, state.colorMode);
+  } catch {
+    // Ignore storage failures; the visible toggle still applies for this session.
+  }
+
+  setTheme(state.currentTheme);
 }
 
 function sceneStyle(art) {
@@ -2580,10 +2656,14 @@ function renderDrawer() {
 }
 
 function renderHomeMeta() {
-  currentParkMeta.innerHTML = "<strong>Park Atlas</strong>Choose a park";
+  currentParkMeta.textContent = "";
+  currentParkMeta.classList.add("is-empty");
+  currentParkMeta.setAttribute("aria-hidden", "true");
 }
 
 function renderMeta(park) {
+  currentParkMeta.classList.remove("is-empty");
+  currentParkMeta.removeAttribute("aria-hidden");
   currentParkMeta.innerHTML = `<strong>${park.shortName}</strong>${park.location}`;
 }
 
@@ -2867,6 +2947,7 @@ function queueParallax() {
 function bindEvents() {
   menuButton.addEventListener("click", () => toggleDrawer());
   homeButton.addEventListener("click", setHome);
+  themeToggle.addEventListener("click", toggleColorMode);
   drawerClose.addEventListener("click", () => toggleDrawer(false));
   drawerBackdrop.addEventListener("click", () => toggleDrawer(false));
 
