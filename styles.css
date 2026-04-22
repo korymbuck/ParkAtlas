@@ -115,8 +115,11 @@ button {
 }
 
 .menu-button,
+.brand-button,
 .drawer-close,
 .cta-button,
+.home-secondary-button,
+.home-park-card,
 .park-item {
   cursor: pointer;
 }
@@ -154,6 +157,18 @@ button {
   text-align: center;
 }
 
+.brand-button {
+  padding: 0.25rem 0.6rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+}
+
+.brand-button:hover .brand-kicker {
+  color: var(--accent);
+}
+
 .brand-kicker,
 .brand-note,
 .eyebrow,
@@ -169,6 +184,7 @@ button {
 
 .brand-kicker,
 .brand-note {
+  display: block;
   margin: 0;
 }
 
@@ -337,6 +353,276 @@ button {
   padding-inline: clamp(1rem, 3vw, 2rem);
 }
 
+.home-hero {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  padding: 6.5rem 0 2rem;
+}
+
+.home-hero-stage {
+  position: relative;
+  min-height: min(78vh, 52rem);
+  border: 1px solid var(--line);
+  border-radius: 2.4rem;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 50% 48%, rgba(255, 220, 160, 0.18), transparent 22%),
+    radial-gradient(circle at 18% 18%, rgba(131, 199, 193, 0.2), transparent 28%),
+    radial-gradient(circle at 82% 78%, rgba(227, 162, 95, 0.18), transparent 30%),
+    linear-gradient(145deg, rgba(9, 17, 27, 0.94), rgba(18, 14, 10, 0.94));
+  box-shadow: 0 32px 80px -42px var(--shadow);
+}
+
+.home-globe-rings,
+.home-globe-rings::before,
+.home-globe-rings::after {
+  position: absolute;
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+.home-globe-rings {
+  inset: 8%;
+  z-index: 0;
+  border: 1px solid rgba(255, 224, 170, 0.14);
+  background:
+    radial-gradient(circle, transparent 0 39%, rgba(255, 224, 170, 0.1) 40% 40.5%, transparent 41%),
+    radial-gradient(circle, rgba(255, 255, 255, 0.06), transparent 62%);
+  animation: homeRingPulse 8s ease-in-out infinite;
+}
+
+.home-globe-rings::before,
+.home-globe-rings::after {
+  content: "";
+  inset: 10%;
+  border: 1px solid rgba(131, 199, 193, 0.16);
+}
+
+.home-globe-rings::before {
+  transform: rotate(28deg) scaleX(0.72);
+}
+
+.home-globe-rings::after {
+  transform: rotate(-18deg) scaleY(0.62);
+}
+
+.home-image-globe {
+  position: absolute;
+  inset: clamp(0.25rem, 1.2vw, 1rem);
+  z-index: 1;
+  --node-scale: 1;
+}
+
+.home-orbit-card {
+  position: absolute;
+  left: var(--home-card-left);
+  top: var(--home-card-top);
+  z-index: var(--home-card-depth, 1);
+  width: var(--home-card-size);
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  border: 1px solid rgba(255, 239, 210, 0.22);
+  border-radius: 1.1rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 50px -26px rgba(0, 0, 0, 0.8);
+  opacity: 0.78;
+  transform:
+    translate(-50%, -50%)
+    rotate(var(--home-card-rotate))
+    scale(var(--home-card-scale));
+  animation: homeCardDrift var(--home-card-duration) ease-in-out infinite alternate;
+  animation-delay: var(--home-card-delay);
+}
+
+.home-orbit-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: saturate(1.06) contrast(1.04);
+}
+
+.home-orbit-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(4, 7, 11, 0.08), transparent 42%, rgba(4, 7, 11, 0.56)),
+    radial-gradient(circle at 50% 50%, transparent 42%, rgba(4, 7, 11, 0.24));
+}
+
+.home-title-card {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  z-index: 6;
+  width: min(92%, 42rem);
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.5));
+}
+
+.home-title-card h1 {
+  margin: 0;
+  font-size: clamp(4.6rem, 13vw, 10.5rem);
+  line-height: 0.78;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  text-shadow: 0 18px 54px rgba(0, 0, 0, 0.45);
+}
+
+.home-title-card p {
+  margin: 0 auto;
+  max-width: 45rem;
+  padding: 0.85rem 1.05rem;
+  border: 1px solid rgba(255, 244, 226, 0.28);
+  border-radius: 1.15rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.08)),
+    rgba(6, 9, 13, 0.62);
+  backdrop-filter: blur(42px) saturate(1.45);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    0 18px 54px -32px rgba(0, 0, 0, 0.88);
+  color: rgba(248, 241, 231, 0.86);
+  line-height: 1.7;
+  text-shadow: 0 3px 24px rgba(0, 0, 0, 0.78);
+}
+
+.home-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+.home-actions .cta-button {
+  background: rgba(255, 224, 170, 0.86);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 54px -30px rgba(0, 0, 0, 0.82);
+}
+
+.home-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 14rem;
+  padding: 1rem 1.35rem;
+  border: 1px solid rgba(255, 244, 226, 0.28);
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.08)),
+    rgba(5, 8, 12, 0.64);
+  backdrop-filter: blur(42px) saturate(1.45);
+  color: var(--text);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 18px 48px -30px rgba(0, 0, 0, 0.78);
+}
+
+.home-secondary-button:hover,
+.home-park-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 70%, var(--line));
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.home-summary {
+  display: grid;
+  gap: 1.2rem;
+  padding-top: 1rem;
+}
+
+.home-summary-card {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.home-collection {
+  display: grid;
+  gap: 1.4rem;
+  padding-bottom: 7rem;
+}
+
+.home-park-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-park-card {
+  display: grid;
+  gap: 0.55rem;
+  min-height: 14rem;
+  padding: 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+    var(--surface);
+  color: var(--text);
+  text-align: left;
+  box-shadow: 0 24px 54px -40px var(--shadow);
+  transition:
+    border-color 220ms ease,
+    background 220ms ease,
+    transform 220ms ease;
+}
+
+.home-park-card:hover {
+  transform: translateY(-0.18rem);
+}
+
+.home-park-name {
+  font-size: 1.32rem;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.home-park-location,
+.home-park-summary {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.home-park-location {
+  font-size: 0.9rem;
+}
+
+@keyframes homeCardDrift {
+  to {
+    transform:
+      translate(calc(-50% + var(--home-card-float-x)), calc(-50% + var(--home-card-float-y)))
+      rotate(calc(var(--home-card-rotate) + var(--home-card-spin)))
+      scale(calc(var(--home-card-scale) * 1.04));
+  }
+}
+
+@keyframes homeRingPulse {
+  50% {
+    opacity: 0.72;
+    transform: scale(0.985);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .home-globe-rings,
+  .home-orbit-card {
+    animation: none;
+  }
+}
+
 .hero {
   position: relative;
   min-height: 240vh;
@@ -379,11 +665,21 @@ button {
 }
 
 .hero-photo-bg {
+  inset: var(--hero-photo-bg-inset, -4%);
   background-position: center 28%;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: saturate(0.98) contrast(1.04);
-  --node-scale: calc(1.08 - (var(--hero-progress, 0) * 0.04));
+  filter: var(--hero-photo-bg-filter, saturate(0.98) contrast(1.04));
+  --node-scale: var(--hero-photo-bg-scale, calc(1.08 - (var(--hero-progress, 0) * 0.04)));
+}
+
+.hero-photo-bg-image {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: var(--hero-photo-bg-position, center center);
 }
 
 .hero-photo-tint,
@@ -483,8 +779,7 @@ button {
   clip-path: polygon(0 100%, 0 62%, 14% 48%, 26% 58%, 44% 34%, 58% 54%, 72% 44%, 88% 56%, 100% 46%, 100% 100%);
 }
 
-.hero-stage-caption,
-.hero-scroll-cue {
+.hero-stage-caption {
   position: absolute;
   left: clamp(1.1rem, 2.5vw, 1.8rem);
   z-index: 4;
@@ -498,15 +793,6 @@ button {
   font-size: 0.7rem;
   font-weight: 800;
   color: rgba(247, 242, 232, 0.74);
-}
-
-.hero-scroll-cue {
-  bottom: clamp(1.1rem, 2.5vw, 1.8rem);
-  font-size: 0.68rem;
-  font-weight: 800;
-  color: var(--accent-bright);
-  opacity: clamp(0, calc(1.12 - (var(--hero-progress, 0) * 2.4)), 1);
-  transform: translate3d(0, calc(var(--hero-progress, 0) * -1.6rem), 0);
 }
 
 .hero-title-reveal {
@@ -589,10 +875,10 @@ button {
   object-fit: var(--hero-foreground-fit, contain);
   object-position: var(--hero-foreground-position, center center);
   pointer-events: none;
-  filter: drop-shadow(0 16px 34px rgba(0, 0, 0, 0.28));
+  filter: var(--hero-foreground-filter, drop-shadow(0 16px 34px rgba(0, 0, 0, 0.28)));
   --node-x: var(--hero-foreground-node-x, -50%);
   --node-y: calc(var(--hero-progress, 0) * var(--hero-foreground-travel, 14vh));
-  --node-scale: calc(1.01 - (var(--hero-progress, 0) * 0.02));
+  --node-scale: var(--hero-foreground-scale, calc(1.01 - (var(--hero-progress, 0) * 0.02)));
 }
 
 .glass-card {
@@ -970,9 +1256,18 @@ button {
 
   .cta-panel,
   .chapter,
+  .home-park-grid,
   .overview-cards,
   .fact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-hero-stage {
+    min-height: min(76vh, 48rem);
+  }
+
+  .home-orbit-card:nth-child(n + 19) {
+    display: none;
   }
 
   .hero-sticky {
@@ -1038,6 +1333,42 @@ button {
     min-height: 210vh;
   }
 
+  .home-hero {
+    padding-top: 5.4rem;
+  }
+
+  .home-hero-stage {
+    min-height: 78vh;
+    border-radius: 1.45rem;
+  }
+
+  .home-globe-rings {
+    inset: 3%;
+  }
+
+  .home-title-card {
+    width: calc(100% - 1.5rem);
+    padding: 1.1rem;
+  }
+
+  .home-title-card h1 {
+    font-size: clamp(3.4rem, 18vw, 5.6rem);
+  }
+
+  .home-title-card p {
+    font-size: 0.94rem;
+  }
+
+  .home-actions .cta-button,
+  .home-secondary-button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .home-orbit-card:nth-child(n + 13) {
+    display: none;
+  }
+
   .hero-sticky {
     padding-top: 4.85rem;
     padding-bottom: 1rem;
@@ -1069,8 +1400,7 @@ button {
     text-indent: 0.28em;
   }
 
-  .hero-stage-caption,
-  .hero-scroll-cue {
+  .hero-stage-caption {
     left: 1rem;
   }
 

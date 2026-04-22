@@ -1,4 +1,628 @@
 const parks = {
+  acad: {
+    code: "ACAD",
+    name: "Acadia National Park",
+    location: "Bar Harbor, Maine",
+    shortName: "Acadia",
+    link: "https://www.nps.gov/acad/index.htm",
+    drawerSummary:
+      "Granite headlands, Atlantic surf, carriage roads, Wabanaki homeland, and mountain-to-sea views.",
+    hero: {
+      eyebrow: "Featured Park",
+      tagline:
+        "A North Atlantic park where granite mountains meet cold ocean, spruce forest, and sunrise light.",
+      landmarkLabel: "Cadillac Mountain and the glaciated coast of Mount Desert Island",
+      titlePrimarySize: "clamp(4.35rem, 12.8vw, 8.7rem)",
+      titleSecondarySize: "clamp(0.95rem, 2.2vw, 1.75rem)",
+      titleMaxWidth: "52rem",
+      titleOffsetY: "-25.3vh",
+      titlePrimaryWhiteSpace: "nowrap",
+      media: {
+        background: "./assets/ACAD/acadia-hero-background.jpg",
+        backgroundPosition: "center center",
+        backgroundInset: "0",
+        backgroundParallaxSpeed: "0.04",
+        backgroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        foreground: "./assets/ACAD/acadia-hero-foreground.png",
+        foregroundWidth: "100%",
+        foregroundHeight: "100%",
+        foregroundBottom: "0",
+        foregroundLeft: "0",
+        foregroundNodeX: "0",
+        foregroundFit: "cover",
+        foregroundPosition: "center center",
+        foregroundParallaxSpeed: "0.08",
+        foregroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        foregroundFilter: "none",
+        foregroundTravel: "0vh",
+        foregroundAlt:
+          "Granite coastal headlands and evergreen forest in Acadia National Park",
+      },
+      highlightTitle:
+        "A Maine coast park where mountain summits, granite shore, forests, and ocean all compress together",
+      highlightBody:
+        "First protected as Sieur de Monts National Monument on July 8, 1916, then established as Lafayette National Park on February 26, 1919, Acadia became Acadia National Park on January 19, 1929. The park protects the highest rocky headlands along the Atlantic coastline of the United States, a landscape where glaciated granite, spruce-fir forest, lakes, carriage roads, and the ocean meet within a compact island setting.",
+      stats: [
+        { label: "National park", value: "1919" },
+        { label: "Renamed", value: "1929" },
+        { label: "Signature", value: "Cadillac" },
+      ],
+    },
+    overview: {
+      title:
+        "A coastal mountain park shaped by glacier, tide, forest, and generations of human care.",
+      body: "Acadia gathers an unusual range of landscapes into a small area: rounded granite summits, rocky beaches, ponds, wetlands, spruce-fir woods, historic carriage roads, and Atlantic shoreline. Its drama comes from proximity. You can move from sea level to open summit, from surf to quiet forest, and from broad ocean horizon to sheltered pond without the park ever feeling like a single-note landscape.",
+      notes: [
+        {
+          title: "Mountains meet ocean",
+          text: "NPS describes Acadia as protecting the highest rocky headlands along the Atlantic coast of the United States, with Cadillac Mountain rising above the surrounding island and bay landscape.",
+        },
+        {
+          title: "Wabanaki homeland",
+          text: "The park is part of the ancestral homeland of Wabanaki peoples, whose enduring presence and connection to this coast long predates the national park.",
+        },
+        {
+          title: "Built for movement",
+          text: "Historic motor roads, hiking trails, and carriage roads shape how visitors experience Acadia, turning the park into a network of summits, ponds, bridges, and shoreline routes.",
+        },
+      ],
+    },
+    chapters: [
+      {
+        title:
+          "Acadia begins with granite, ice, and ocean pressure, leaving rounded mountains beside a hard Atlantic edge.",
+        body: "The park's mountains and shoreline carry the imprint of deep geologic time and more recent glaciation. Ice rounded summits, scoured basins, and helped shape the island's ponds and valleys. Along the coast, waves keep working against granite ledges and cobble beaches, so the park feels both ancient and immediate: polished by ice, sharpened by weather, and constantly reintroduced by the tide.",
+        factLabel: "Geology",
+        fact: "Cadillac Mountain rises to 1,530 feet and is described by NPS as the highest point on the eastern seaboard of the United States.",
+        scenicLabel: "Granite summits dropping toward Atlantic water",
+        image: {
+          src: "./assets/ACAD/acadia-story-1.jpg",
+          alt: "Cliffsides dropping to the ocean below with spruce trees along the ridgelines in Acadia National Park",
+          position: "center center",
+        },
+        art: {
+          top: "#10273b",
+          mid: "#55717a",
+          bottom: "#c69d75",
+          orb: "#ffd99f",
+          orbGlow: "rgba(255, 197, 127, 0.3)",
+          haze: "rgba(173, 205, 210, 0.22)",
+          layerA: "#7d8f89",
+          layerB: "#4f655d",
+          layerC: "#263a34",
+          river: "rgba(146, 190, 207, 0.24)",
+          riverOpacity: "0.18",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbLeft: "16%",
+          orbTop: "12%",
+        },
+      },
+      {
+        title:
+          "Then the park turns vertical in a coastal way: short climbs, wide views, and the ocean always near the edge of sight.",
+        body: "Acadia's scale is not western immensity. It is compression. A summit can feel exposed to the whole Atlantic, while a pond or forest path nearby feels enclosed and quiet. Cadillac Mountain, the Park Loop Road, and the carriage road system all make that compression legible, moving visitors through a designed rhythm of overlooks, stone bridges, shoreline, and woods.",
+        factLabel: "Movement",
+        fact: "NPS highlights 27 miles of historic motor roads, 158 miles of hiking trails, and 45 miles of carriage roads within Acadia.",
+        scenicLabel: "Carriage roads, stone bridges, and summit views above the sea",
+        image: {
+          src: "./assets/ACAD/acadia-story-2.jpg",
+          alt: "The summit of Cadillac Mountain overlooking Acadia National Park",
+          position: "center center",
+        },
+        art: {
+          top: "#17364d",
+          mid: "#6f8d8a",
+          bottom: "#d7b183",
+          orb: "#ffe6b7",
+          orbGlow: "rgba(255, 219, 164, 0.26)",
+          haze: "rgba(193, 220, 218, 0.22)",
+          layerA: "#8fa184",
+          layerB: "#586d55",
+          layerC: "#2b3b31",
+          river: "rgba(156, 199, 215, 0.2)",
+          riverOpacity: "0.16",
+          fallsOpacity: "0.08",
+          starsOpacity: "0",
+          orbRight: "15%",
+          orbTop: "13%",
+        },
+      },
+      {
+        title:
+          "What makes Acadia feel distinct is the meeting of cold-water coast, evergreen forest, and long cultural memory.",
+        body: "Acadia is not just a scenic island park. It is Wabanaki homeland, a place shaped by conservation philanthropy, village edges, working coastlines, and a long tradition of people moving through the landscape. The park's beauty comes through that layering: dawn on granite, tidepools below cliffs, spruce shadows, carriage roads in the woods, and ocean air moving over the mountains.",
+        factLabel: "Culture",
+        fact: "NPS notes that Acadia's national park story grew from donated land and preservation efforts, with the place known across time as Pemetic, Sieur de Monts, Lafayette, and Acadia.",
+        scenicLabel: "Evergreen forest and ocean light around Mount Desert Island",
+        image: {
+          src: "./assets/ACAD/acadia-story-3.jpg",
+          alt: "Aerial view of Mount Desert Island with forest, coastline, and ocean around Acadia National Park",
+          position: "center center",
+        },
+        art: {
+          top: "#0d2030",
+          mid: "#304f52",
+          bottom: "#a98a67",
+          orb: "#fff0c8",
+          orbGlow: "rgba(242, 218, 175, 0.24)",
+          haze: "rgba(156, 189, 189, 0.2)",
+          layerA: "#607966",
+          layerB: "#354f43",
+          layerC: "#192b26",
+          river: "rgba(164, 207, 219, 0.2)",
+          riverOpacity: "0.16",
+          fallsOpacity: "0.14",
+          starsOpacity: "0.16",
+          orbLeft: "18%",
+          orbTop: "14%",
+        },
+      },
+    ],
+    facts: [
+      {
+        label: "History",
+        title: "A national park built through donations",
+        text: "The site was first protected as Sieur de Monts National Monument in 1916, became Lafayette National Park in 1919, and was renamed Acadia National Park in 1929.",
+      },
+      {
+        label: "Landmark",
+        title: "Cadillac Mountain defines the skyline",
+        text: "Cadillac Mountain reaches 1,530 feet and offers wide views across a glaciated coastal and island landscape.",
+      },
+      {
+        label: "Landscape",
+        title: "Its power is coastal compression",
+        text: "Acadia's identity comes from how tightly it holds mountain summits, forest, freshwater, historic roads, rocky shore, and Atlantic horizon together.",
+      },
+    ],
+    cta: {
+      meta: "Trip planning",
+      title: "Open the official Acadia National Park site.",
+      text: "Use the official NPS site for Cadillac Summit Road reservations, road conditions, seasonal closures, trail guidance, and planning details before a visit.",
+      label: "Visit Acadia on NPS",
+    },
+    theme: {
+      bgTop: "#07131d",
+      bgBottom: "#101814",
+      surface: "rgba(12, 18, 21, 0.72)",
+      surfaceStrong: "rgba(14, 21, 24, 0.9)",
+      card: "rgba(224, 239, 232, 0.08)",
+      cardStrong: "rgba(224, 239, 232, 0.13)",
+      line: "rgba(187, 220, 213, 0.16)",
+      text: "#eef5ee",
+      muted: "#b9cbc2",
+      accent: "#7fc2ba",
+      accentBright: "#f4d39a",
+      accentSecondary: "#9cc5d5",
+      shadow: "rgba(0, 0, 0, 0.34)",
+      heroSkyTop: "#18334b",
+      heroSkyBottom: "#729198",
+      heroHorizon: "rgba(239, 202, 151, 0.42)",
+      heroRidgeBack: "#738680",
+      heroRidgeMid: "#425f55",
+      heroRidgeFront: "#1f332e",
+      heroGlow: "rgba(244, 202, 143, 0.22)",
+    },
+  },
+  arch: {
+    code: "ARCH",
+    name: "Arches National Park",
+    location: "Moab, Utah",
+    shortName: "Arches",
+    link: "https://www.nps.gov/arch/index.htm",
+    drawerSummary:
+      "Sandstone fins, freestanding arches, desert basins, and red rock shaped by water and time.",
+    hero: {
+      eyebrow: "Featured Park",
+      tagline:
+        "A red-rock park where buried sandstone cracked into fins, windows, and freestanding arches.",
+      landmarkLabel: "Delicate Arch above the high desert around Moab",
+      titlePrimarySize: "clamp(4.2rem, 12vw, 8.4rem)",
+      titleSecondarySize: "clamp(0.95rem, 2.25vw, 1.8rem)",
+      titleMaxWidth: "44rem",
+      titleOffsetY: "-12vh",
+      titleAlign: "right",
+      titleJustify: "end",
+      titleMargin: "0 clamp(1.25rem, 4vw, 3.5rem) 0 auto",
+      titleTransformOrigin: "right bottom",
+      titlePrimaryWhiteSpace: "nowrap",
+      titleSecondaryWhiteSpace: "nowrap",
+      media: {
+        background: "./assets/ARCH/arches-hero-background.jpg",
+        backgroundPosition: "center center",
+        backgroundInset: "0",
+        backgroundParallaxSpeed: "0.04",
+        backgroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        foreground: "./assets/ARCH/arches-hero-foreground.png",
+        foregroundWidth: "100%",
+        foregroundHeight: "100%",
+        foregroundBottom: "0",
+        foregroundLeft: "0",
+        foregroundNodeX: "0",
+        foregroundFit: "cover",
+        foregroundPosition: "center center",
+        foregroundParallaxSpeed: "0.08",
+        foregroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        foregroundFilter: "none",
+        foregroundTravel: "0vh",
+        foregroundAlt:
+          "Delicate Arch rising above the red rock basin in Arches National Park",
+      },
+      highlightTitle:
+        "A Utah desert park where sandstone fins keep opening into arches, windows, and towers",
+      highlightBody:
+        "Protected first as Arches National Monument in 1929 and established as a national park on November 12, 1971, Arches preserves the densest concentration of natural stone arches in the world. The park's signature forms come from fractured sandstone, deep geologic uplift, and the steady work of water, freezing, and erosion across an exposed high desert landscape.",
+      stats: [
+        { label: "Established", value: "1971" },
+        { label: "Signature", value: "Delicate Arch" },
+        { label: "Stone arches", value: "2,000+" },
+      ],
+    },
+    overview: {
+      title:
+        "A high-desert landscape of fins, windows, balanced rock, and open basin light.",
+      body: "Just north of Moab, Arches protects a plateau of Entrada Sandstone and other red-rock layers cut into fins, alcoves, spires, and arches. The park feels both sculptural and spacious: individual monuments stand out sharply, yet the larger impression comes from how much exposed stone, sky, and distance the landscape holds at once.",
+      notes: [
+        {
+          title: "Fins become arches",
+          text: "The park's arches begin as long sandstone fins split by fractures. Water seeps into those cracks, widens them over time, and eventually opens windows and arches through the rock.",
+        },
+        {
+          title: "Water matters more than wind",
+          text: "Despite the park's desert reputation, the National Park Service emphasizes that water does more of the shaping here than wind, especially through runoff, freezing, and thawing.",
+        },
+        {
+          title: "More than one icon",
+          text: "Delicate Arch is the most famous landmark, but the broader park includes balanced rocks, towering walls, narrow passages, and entire districts of stone forms spread across the plateau.",
+        },
+      ],
+    },
+    chapters: [
+      {
+        title:
+          "Arches begins with buried salt, fractured sandstone, and fins waiting to be opened by water.",
+        body: "The park's famous silhouettes are the visible end of a much longer geologic story. Movements deep below the surface warped overlying rock, fractures broke through the sandstone, and erosion gradually turned those cracked layers into fins. Once exposed, water kept widening the weak points until openings appeared and some of those fins became arches.",
+        factLabel: "Geology",
+        fact: "Arches has more than 2,000 documented stone arches because the right sandstone, fracture patterns, and erosion all meet in the same place.",
+        scenicLabel: "Stone fins and windows above the desert floor",
+        image: {
+          src: "./assets/ARCH/arches-story-1.webp",
+          alt: "Towering sandstone fins and rock spires in Arches National Park",
+          position: "center center",
+        },
+        art: {
+          top: "#12233a",
+          mid: "#8a4b2d",
+          bottom: "#e6aa71",
+          orb: "#ffd8a2",
+          orbGlow: "rgba(255, 196, 124, 0.34)",
+          haze: "rgba(241, 182, 117, 0.22)",
+          layerA: "#b56c43",
+          layerB: "#6b3e28",
+          layerC: "#2f1d16",
+          river: "rgba(208, 225, 238, 0.16)",
+          riverOpacity: "0.1",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbLeft: "16%",
+          orbTop: "13%",
+        },
+      },
+      {
+        title:
+          "Then the park narrows its vastness into singular forms that look impossible from a distance and stranger up close.",
+        body: "Arches is full of individual landmarks that feel instantly legible: Delicate Arch standing free against the horizon, the Windows cut cleanly through sandstone walls, Balanced Rock poised above its base. Those forms are part of why the park is so memorable. The landscape reads almost like a gallery, but one set inside open desert space rather than enclosed by it.",
+        factLabel: "Landmark",
+        fact: "Delicate Arch has become one of the best-known geologic symbols in the American West and the most widely recognized image of the park.",
+        scenicLabel: "A freestanding arch against basin and rim country",
+        image: {
+          src: "./assets/ARCH/arches-story-2.jpg",
+          alt: "Delicate Arch glowing in warm light above the high desert in Arches National Park",
+          position: "center center",
+        },
+        art: {
+          top: "#17304d",
+          mid: "#986041",
+          bottom: "#f1bf86",
+          orb: "#ffe1af",
+          orbGlow: "rgba(255, 211, 141, 0.3)",
+          haze: "rgba(230, 194, 150, 0.2)",
+          layerA: "#cb8458",
+          layerB: "#7d5036",
+          layerC: "#35231b",
+          river: "rgba(190, 216, 234, 0.22)",
+          riverOpacity: "0.14",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbRight: "15%",
+          orbTop: "12%",
+        },
+      },
+      {
+        title:
+          "What holds the whole park together is not only the stone itself but the desert light moving across it.",
+        body: "Morning and evening shift Arches from red to copper to rose, and the open plateau gives those changes room to register. Sparse vegetation, long sightlines, and the dry air all intensify the experience, making the park feel at once exposed and monumental. It is a landscape where color, shadow, and empty space are as important as the rock forms themselves.",
+        factLabel: "Desert note",
+        fact: "The same arid climate that limits vegetation also helps keep the rock forms exposed, letting light and shadow define the park's character across the day.",
+        scenicLabel: "Open desert light moving across red stone",
+        image: {
+          src: "./assets/ARCH/arches-story-3.jpg",
+          alt: "A visitor standing beneath massive red stone arches in Arches National Park",
+          position: "center center",
+        },
+        art: {
+          top: "#101f33",
+          mid: "#566b78",
+          bottom: "#d9a270",
+          orb: "#fff0cb",
+          orbGlow: "rgba(247, 220, 167, 0.26)",
+          haze: "rgba(191, 206, 218, 0.18)",
+          layerA: "#a9754f",
+          layerB: "#61402d",
+          layerC: "#2b2019",
+          river: "rgba(202, 223, 236, 0.18)",
+          riverOpacity: "0.1",
+          fallsOpacity: "0",
+          starsOpacity: "0.2",
+          orbLeft: "19%",
+          orbTop: "14%",
+        },
+      },
+    ],
+    facts: [
+      {
+        label: "History",
+        title: "Protected first as a monument",
+        text: "Arches National Monument was established on April 12, 1929, and the site became Arches National Park on November 12, 1971.",
+      },
+      {
+        label: "Geology",
+        title: "Fractured fins are the starting point",
+        text: "The park's arches depend on the combination of porous sandstone, parallel fractures, and long erosion. In Arches, fins are the intermediate form that makes the later openings possible.",
+      },
+      {
+        label: "Scale",
+        title: "The park feels sculptural and expansive at once",
+        text: "Visitors remember the park for specific landmarks, but the deeper impression comes from the wider plateau: red walls, distant basins, open sky, and stone forms scattered across a large desert setting.",
+      },
+    ],
+    cta: {
+      meta: "Trip planning",
+      title: "Open the official Arches National Park site.",
+      text: "Use the official NPS site for timed-entry updates, trail information, weather, and the practical details that shape a visit in the Utah desert.",
+      label: "Visit Arches on NPS",
+    },
+    theme: {
+      bgTop: "#08111a",
+      bgBottom: "#1a120d",
+      surface: "rgba(15, 18, 23, 0.72)",
+      surfaceStrong: "rgba(17, 21, 27, 0.9)",
+      card: "rgba(247, 236, 220, 0.08)",
+      cardStrong: "rgba(247, 236, 220, 0.12)",
+      line: "rgba(236, 203, 168, 0.16)",
+      text: "#f7f1e8",
+      muted: "#ccb9a6",
+      accent: "#e08e57",
+      accentBright: "#ffd6a1",
+      accentSecondary: "#9fc4d9",
+      shadow: "rgba(0, 0, 0, 0.36)",
+      heroSkyTop: "#19314c",
+      heroSkyBottom: "#a55e39",
+      heroHorizon: "rgba(255, 202, 139, 0.44)",
+      heroRidgeBack: "#8e5f42",
+      heroRidgeMid: "#593825",
+      heroRidgeFront: "#2d1d15",
+      heroGlow: "rgba(255, 191, 124, 0.24)",
+    },
+  },
+  badl: {
+    code: "BADL",
+    name: "Badlands National Park",
+    location: "Interior, South Dakota",
+    shortName: "Badlands",
+    link: "https://www.nps.gov/badl/index.htm",
+    drawerSummary:
+      "Eroded buttes, striped fossil beds, mixed-grass prairie, bison, bighorn sheep, and long plains light.",
+    hero: {
+      eyebrow: "Featured Park",
+      tagline:
+        "A prairie park where soft rock erodes into pinnacles, striped walls, and fossil-rich forms.",
+      landmarkLabel: "Badlands buttes and mixed-grass prairie in southwestern South Dakota",
+      titlePrimarySize: "clamp(4rem, 11.8vw, 8.2rem)",
+      titleSecondarySize: "clamp(0.95rem, 2.2vw, 1.75rem)",
+      titleMaxWidth: "56rem",
+      titleOffsetY: "-25.3vh",
+      titlePrimaryWhiteSpace: "nowrap",
+      titleSecondaryWhiteSpace: "nowrap",
+      media: {
+        background: "./assets/BADL/badlands-hero-background.webp",
+        backgroundPosition: "center center",
+        backgroundInset: "0",
+        backgroundParallaxSpeed: "0.04",
+        backgroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        foreground: "./assets/BADL/badlands-hero-foreground.png",
+        foregroundWidth: "100%",
+        foregroundHeight: "100%",
+        foregroundBottom: "0",
+        foregroundLeft: "0",
+        foregroundNodeX: "0",
+        foregroundFit: "cover",
+        foregroundPosition: "center center",
+        foregroundParallaxSpeed: "0.08",
+        foregroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        foregroundFilter: "none",
+        foregroundTravel: "0vh",
+        foregroundAlt:
+          "Layered Badlands ridges and eroded buttes rising from prairie in South Dakota",
+      },
+      highlightTitle:
+        "A South Dakota park where erosion exposes stone, fossil history, prairie, and sharp plains light",
+      highlightBody:
+        "Authorized as Badlands National Monument in 1929, officially established in 1939, and redesignated as Badlands National Park on November 10, 1978, Badlands protects roughly 244,000 acres of sharply eroded buttes, pinnacles, spires, and mixed-grass prairie. Its drama comes from contrast: fragile-looking rock striped by ancient deposits, a fossil record of vanished mammals, and living prairie where bison, bighorn sheep, prairie dogs, and black-footed ferrets still belong.",
+      stats: [
+        { label: "National park", value: "1978" },
+        { label: "Landscape", value: "Buttes + prairie" },
+        { label: "Scale", value: "244k acres" },
+      ],
+    },
+    overview: {
+      title:
+        "A plains landscape where erosion turns old sediments into walls, windows, pinnacles, and fossil beds.",
+      body: "Badlands sits in southwestern South Dakota, where a mixed-grass prairie ecosystem surrounds sharply eroded formations of clay-rich rock. The park feels exposed and changeable: sunlight rakes across bands of color, storms move quickly over open grassland, and erosion keeps cutting new edges into a landscape that is both sculptural and unstable.",
+      notes: [
+        {
+          title: "Deposition, then erosion",
+          text: "NPS describes Badlands rock layers as deposits laid down as early as 75 million years ago, with the modern erosional landscape beginning to form much more recently.",
+        },
+        {
+          title: "Fossils in the open",
+          text: "The park is known for one of the world's richest fossil beds, preserving evidence of ancient mammals such as horses and rhinos that once lived in this region.",
+        },
+        {
+          title: "Prairie is part of the park",
+          text: "The formations are inseparable from the surrounding mixed-grass prairie, a transition zone that supports wildlife, prairie dog towns, and broad grassland views.",
+        },
+      ],
+    },
+    chapters: [
+      {
+        title:
+          "Badlands begins with sediment, color, and time stacked into layers that erosion can cut open.",
+        body: "The park's buttes and pinnacles are not carved from hard mountain rock. They are made from softer sedimentary layers deposited across changing environments, then exposed and broken down by water, wind, freezing, thawing, and gravity. That is why the formations feel so sharp and temporary. They look monumental, but the landscape is actively wearing away and revealing new surfaces.",
+        factLabel: "Geology",
+        fact: "NPS notes that Badlands rocks were deposited as early as 75 million years ago and began eroding into the current landscape about 500,000 years ago.",
+        scenicLabel: "Striped sedimentary walls cut into pinnacles and buttes",
+        image: {
+          src: "./assets/BADL/badlands-story-1.jpg",
+          alt: "Badlands ridges and canyons cut through striped sedimentary rock",
+          position: "center center",
+        },
+        art: {
+          top: "#17304a",
+          mid: "#b07a5a",
+          bottom: "#ead2aa",
+          orb: "#ffe0a7",
+          orbGlow: "rgba(255, 204, 133, 0.3)",
+          haze: "rgba(232, 195, 148, 0.24)",
+          layerA: "#c78d68",
+          layerB: "#8d5c43",
+          layerC: "#3a2a22",
+          river: "rgba(196, 218, 224, 0.12)",
+          riverOpacity: "0.08",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbLeft: "16%",
+          orbTop: "13%",
+        },
+      },
+      {
+        title:
+          "Then the eroded walls become an archive, exposing fossils as the rock keeps falling apart.",
+        body: "Badlands is one of the rare parks where the visible landscape and scientific record are the same thing. As erosion removes material, fossils can appear from the rock, connecting the present-day prairie to older ecosystems that held ancient horses, rhinos, and other mammals. The formations are scenic, but they are also evidence: a surface where deep time keeps becoming visible.",
+        factLabel: "Fossils",
+        fact: "NPS describes Badlands as containing one of the world's richest fossil beds and highlights ancient horses and rhinos among the animals preserved here.",
+        scenicLabel: "Fossil-bearing ridges glowing under plains light",
+        image: {
+          src: "./assets/BADL/badlands-story-2.jpg",
+          alt: "A fossil exposed in the dirt in Badlands National Park",
+          position: "center center",
+        },
+        art: {
+          top: "#12263f",
+          mid: "#9d6f56",
+          bottom: "#e8caa1",
+          orb: "#ffe7b8",
+          orbGlow: "rgba(255, 222, 168, 0.26)",
+          haze: "rgba(235, 205, 165, 0.22)",
+          layerA: "#c59a76",
+          layerB: "#80604b",
+          layerC: "#34281f",
+          river: "rgba(176, 205, 218, 0.16)",
+          riverOpacity: "0.1",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbRight: "15%",
+          orbTop: "12%",
+        },
+      },
+      {
+        title:
+          "What keeps the park from becoming only stone is the prairie moving through and around it.",
+        body: "The mixed-grass prairie gives Badlands its living scale. Grassland wraps the formations, holds wildlife corridors, and changes color with weather and season. The park's human history is layered too, from long Indigenous presence to homesteading and the complicated legacy of the South Unit on Pine Ridge Indian Reservation lands. Badlands is not just a view of erosion; it is a living plains landscape with cultural and ecological depth.",
+        factLabel: "Prairie",
+        fact: "NPS describes Badlands as a mixed-grass prairie ecosystem and notes that people have been in and around the Badlands for as long as 12,000 years.",
+        scenicLabel: "Mixed-grass prairie surrounding eroded Badlands walls",
+        image: {
+          src: "./assets/BADL/badlands-story-3.png",
+          alt: "Prairie grasslands with a distant view of Badlands ridges",
+          position: "center center",
+        },
+        art: {
+          top: "#0f2234",
+          mid: "#6f7252",
+          bottom: "#d0a876",
+          orb: "#fff0c8",
+          orbGlow: "rgba(242, 218, 175, 0.24)",
+          haze: "rgba(188, 203, 174, 0.18)",
+          layerA: "#9b8a5f",
+          layerB: "#5f6044",
+          layerC: "#2b3225",
+          river: "rgba(185, 213, 216, 0.14)",
+          riverOpacity: "0.08",
+          fallsOpacity: "0",
+          starsOpacity: "0.18",
+          orbLeft: "19%",
+          orbTop: "14%",
+        },
+      },
+    ],
+    facts: [
+      {
+        label: "History",
+        title: "From monument to national park",
+        text: "Badlands National Monument was authorized in 1929, officially established in 1939, and redesignated as Badlands National Park on November 10, 1978.",
+      },
+      {
+        label: "Geology",
+        title: "The formations are still changing",
+        text: "The buttes, pinnacles, and spires are shaped by ongoing erosion, which keeps cutting into the deposits and exposing new rock and fossils.",
+      },
+      {
+        label: "Ecology",
+        title: "Prairie is not background",
+        text: "The park protects mixed-grass prairie as well as eroded formations, supporting wildlife including bison, bighorn sheep, prairie dogs, and black-footed ferrets.",
+      },
+    ],
+    cta: {
+      meta: "Trip planning",
+      title: "Open the official Badlands National Park site.",
+      text: "Use the official NPS site for road conditions, weather, hiking guidance, wildlife safety, and the planning details needed before a visit.",
+      label: "Visit Badlands on NPS",
+    },
+    theme: {
+      bgTop: "#08111c",
+      bgBottom: "#1a130f",
+      surface: "rgba(17, 18, 21, 0.72)",
+      surfaceStrong: "rgba(20, 21, 24, 0.9)",
+      card: "rgba(246, 230, 204, 0.08)",
+      cardStrong: "rgba(246, 230, 204, 0.13)",
+      line: "rgba(236, 205, 170, 0.16)",
+      text: "#f7efe3",
+      muted: "#cfbda6",
+      accent: "#d5915e",
+      accentBright: "#ffe0ab",
+      accentSecondary: "#9cbfd0",
+      shadow: "rgba(0, 0, 0, 0.35)",
+      heroSkyTop: "#17304a",
+      heroSkyBottom: "#b77a58",
+      heroHorizon: "rgba(255, 217, 157, 0.44)",
+      heroRidgeBack: "#a17455",
+      heroRidgeMid: "#6f4935",
+      heroRidgeFront: "#32241d",
+      heroGlow: "rgba(255, 199, 134, 0.23)",
+    },
+  },
   bibe: {
     code: "BIBE",
     name: "Big Bend National Park",
@@ -12,10 +636,13 @@ const parks = {
       tagline:
         "A desert park that feels carved from heat, distance, and starlight.",
       landmarkLabel: "Chisos Mountains under a Big Bend night sky",
-      scrollCue: "Scroll to pull the park name out from behind the ridge",
+      titleOffsetY: "-22vh",
       media: {
         background: "./assets/BIBE/big-bend-hero-background.png",
         foreground: "./assets/BIBE/big-bend-hero-foreground.png",
+        foregroundWidth: "min(110%, 110rem)",
+        foregroundHeight: "auto",
+        foregroundBottom: "-25%",
         foregroundTravel: "0vh",
         foregroundAlt:
           "The Chisos Mountains rising across the horizon at Big Bend National Park",
@@ -184,6 +811,414 @@ const parks = {
       heroGlow: "rgba(255, 182, 112, 0.28)",
     },
   },
+  bisc: {
+    code: "BISC",
+    name: "Biscayne National Park",
+    location: "Homestead, Florida",
+    shortName: "Biscayne",
+    link: "https://www.nps.gov/bisc/index.htm",
+    drawerSummary:
+      "Aquamarine water, mangrove shorelines, emerald keys, coral reefs, shipwrecks, and subtropical marine life.",
+    hero: {
+      eyebrow: "Featured Park",
+      tagline:
+        "A mostly underwater park where bay, keys, mangroves, and coral reefs meet just south of Miami.",
+      landmarkLabel: "Biscayne water, lighthouse, and shoreline",
+      titlePrimarySize: "clamp(4.1rem, 12vw, 8.3rem)",
+      titleSecondarySize: "clamp(0.95rem, 2.2vw, 1.75rem)",
+      titleMaxWidth: "54rem",
+      titleOffsetY: "-24vh",
+      titleAlign: "left",
+      titleJustify: "start",
+      titleMargin: "0 auto 0 clamp(2rem, 5vw, 4.5rem)",
+      titleTransformOrigin: "left bottom",
+      titlePrimaryWhiteSpace: "nowrap",
+      titleSecondaryWhiteSpace: "nowrap",
+      media: {
+        background: "./assets/BISC/biscayne-hero-background.jpg",
+        backgroundPosition: "center center",
+        backgroundInset: "0",
+        backgroundParallaxSpeed: "0.04",
+        backgroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        backgroundAsImage: true,
+        backgroundFilter: "none",
+        foreground: "./assets/BISC/biscayne-hero-foreground.png",
+        foregroundWidth: "100%",
+        foregroundHeight: "100%",
+        foregroundBottom: "0",
+        foregroundLeft: "0",
+        foregroundNodeX: "0",
+        foregroundFit: "cover",
+        foregroundPosition: "center center",
+        foregroundParallaxSpeed: "0.04",
+        foregroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        foregroundFilter: "none",
+        foregroundTravel: "0vh",
+        foregroundAlt:
+          "Turquoise Biscayne water and tropical islands layered across the foreground",
+      },
+      highlightTitle:
+        "A South Florida marine park where clear water, mangroves, keys, reefs, and human history overlap",
+      highlightBody:
+        "Authorized first as Biscayne National Monument in 1968 and established as Biscayne National Park on June 28, 1980, Biscayne protects a rare tropical meeting of aquamarine bay, mangrove shoreline, island keys, and coral reef. The park sits within sight of Miami, yet most of its world is water, carrying marine life, shipwrecks, seagrass, and thousands of years of human history.",
+      stats: [
+        { label: "National park", value: "1980" },
+        { label: "Water", value: "95%" },
+        { label: "Landscape", value: "Bay + reef" },
+      ],
+    },
+    overview: {
+      title:
+        "A mostly marine national park where the best view is often across, into, or under the water.",
+      body: "Biscayne is different from many parks in the collection because its center is not a mountain, canyon, cave, or desert. It is a shallow subtropical seascape. Mangrove-fringed shorelines meet Biscayne Bay, the northern Florida Keys, seagrass meadows, shipwrecks, and coral reef habitat, making the park feel open, bright, and alive with movement.",
+      notes: [
+        {
+          title: "A park of water",
+          text: "NPS describes Biscayne as a park that is about 95 percent water, so boating, paddling, snorkeling, and diving shape much of the visitor experience.",
+        },
+        {
+          title: "Four connected worlds",
+          text: "The park protects coral reefs, mangrove forests, Biscayne Bay, and Florida Keys, each part of the larger South Florida marine ecosystem.",
+        },
+        {
+          title: "History beneath the surface",
+          text: "Biscayne carries evidence of 10,000 years of human history, from Indigenous presence and maritime travel to shipwrecks, farming, and modern preservation.",
+        },
+      ],
+    },
+    chapters: [
+      {
+        title:
+          "Biscayne begins at the edge of the mainland, where mangroves hold the coast together.",
+        body: "The park's shorelines are not a hard boundary between land and sea. Mangrove roots braid through shallow water, shelter young fish, stabilize the coast, and create habitat where birds, marine life, and tides all meet. That edge gives Biscayne its first sense of intimacy before the bay opens outward toward the keys and reef.",
+        factLabel: "Coast",
+        fact: "NPS describes Biscayne as protecting the longest stretch of mangrove forest along Florida's east coast.",
+        scenicLabel: "Mangrove shoreline meeting clear Biscayne water",
+        image: {
+          src: "./assets/BISC/biscayne-story-1.jpg",
+          alt: "Mangrove shoreline and clear Biscayne water in Biscayne National Park",
+          position: "center center",
+        },
+        art: {
+          top: "#0b2d3d",
+          mid: "#2f8f8d",
+          bottom: "#d7c28b",
+          orb: "#fff0b7",
+          orbGlow: "rgba(255, 222, 158, 0.28)",
+          haze: "rgba(129, 214, 211, 0.24)",
+          layerA: "#4c8c77",
+          layerB: "#245846",
+          layerC: "#132d26",
+          river: "rgba(156, 232, 229, 0.34)",
+          riverOpacity: "0.28",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbLeft: "16%",
+          orbTop: "13%",
+        },
+      },
+      {
+        title:
+          "Then the park widens into bay and keys, a landscape of distance, salt air, and low green islands.",
+        body: "Biscayne's middle distance is all horizon and water. The bay can feel calm and glassy, but it is also a living nursery of seagrass, fish, birds, and tides. The keys add a thin, green line of land, reminding you that this park is not empty blue space but a linked system of islands, shallow flats, and protected marine routes.",
+        factLabel: "Scale",
+        fact: "Biscayne covers about 172,971 acres, most of it water, immediately south of Miami in Miami-Dade County.",
+        scenicLabel: "Shallow bay water opening toward island keys",
+        image: {
+          src: "./assets/BISC/biscayne-story-2.jpg",
+          alt: "Shallow Biscayne Bay water stretching toward low island keys",
+          position: "center center",
+        },
+        art: {
+          top: "#0d3a56",
+          mid: "#43a7a7",
+          bottom: "#f0d6a0",
+          orb: "#fff3c9",
+          orbGlow: "rgba(255, 232, 181, 0.24)",
+          haze: "rgba(162, 226, 224, 0.24)",
+          layerA: "#6aa48b",
+          layerB: "#356f5b",
+          layerC: "#183a32",
+          river: "rgba(151, 231, 232, 0.4)",
+          riverOpacity: "0.32",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbRight: "15%",
+          orbTop: "12%",
+        },
+      },
+      {
+        title:
+          "Farther out, Biscayne becomes reef country, where color, life, and history continue below the surface.",
+        body: "The coral reef gives Biscayne its most hidden drama. Much of the park's richness is underwater: reef fish, corals, wrecks, mooring buoys, and the fragile structure of a marine world that depends on clear water and careful stewardship. The park's beauty is not only what you see from shore, but what waits beneath the bright surface.",
+        factLabel: "Reef",
+        fact: "NPS places Biscayne at the northern end of the Florida Reef, part of one of the world's longest coral barrier reef systems.",
+        scenicLabel: "Coral reef and shipwreck history below turquoise water",
+        image: {
+          src: "./assets/BISC/biscayne-story-3.webp",
+          alt: "Underwater reef life in clear turquoise water at Biscayne National Park",
+          position: "center center",
+        },
+        art: {
+          top: "#062033",
+          mid: "#0b6e7a",
+          bottom: "#bca874",
+          orb: "#e7fff5",
+          orbGlow: "rgba(164, 244, 231, 0.24)",
+          haze: "rgba(99, 210, 211, 0.22)",
+          layerA: "#2f9584",
+          layerB: "#1d5d57",
+          layerC: "#0f302f",
+          river: "rgba(124, 221, 229, 0.42)",
+          riverOpacity: "0.3",
+          fallsOpacity: "0.08",
+          starsOpacity: "0.18",
+          orbLeft: "18%",
+          orbTop: "14%",
+        },
+      },
+    ],
+    facts: [
+      {
+        label: "History",
+        title: "From monument to marine national park",
+        text: "Biscayne was authorized as a national monument on October 18, 1968, then redesignated and expanded as Biscayne National Park on June 28, 1980.",
+      },
+      {
+        label: "Water",
+        title: "The park is mostly open water",
+        text: "Because about 95 percent of Biscayne is water, the park is experienced largely by boat, paddlecraft, snorkeling, diving, and looking across the bay.",
+      },
+      {
+        label: "Ecology",
+        title: "Its habitats are connected",
+        text: "Mangrove shoreline, Biscayne Bay, the Florida Keys, seagrass, and coral reef all work together as one subtropical marine landscape.",
+      },
+    ],
+    cta: {
+      meta: "Trip planning",
+      title: "Open the official Biscayne National Park site.",
+      text: "Use the official NPS site for boating information, guided eco-adventures, paddling, snorkeling, fishing rules, current conditions, and trip planning details.",
+      label: "Visit Biscayne on NPS",
+    },
+    theme: {
+      bgTop: "#04121a",
+      bgBottom: "#0c1b1b",
+      surface: "rgba(8, 20, 24, 0.72)",
+      surfaceStrong: "rgba(10, 24, 28, 0.9)",
+      card: "rgba(218, 246, 238, 0.08)",
+      cardStrong: "rgba(218, 246, 238, 0.13)",
+      line: "rgba(170, 226, 217, 0.16)",
+      text: "#eef8f3",
+      muted: "#b8d2ca",
+      accent: "#66c8bd",
+      accentBright: "#dff6df",
+      accentSecondary: "#e3c078",
+      shadow: "rgba(0, 0, 0, 0.34)",
+      heroSkyTop: "#0b3248",
+      heroSkyBottom: "#45a5a4",
+      heroHorizon: "rgba(231, 218, 160, 0.46)",
+      heroRidgeBack: "#528b7b",
+      heroRidgeMid: "#286054",
+      heroRidgeFront: "#142e2a",
+      heroGlow: "rgba(143, 232, 218, 0.22)",
+    },
+  },
+  blca: {
+    code: "BLCA",
+    name: "Black Canyon of the Gunnison National Park",
+    location: "Montrose, Colorado",
+    shortName: "Black Canyon",
+    link: "https://www.nps.gov/blca/index.htm",
+    drawerSummary:
+      "Sheer Precambrian walls, narrow canyon depths, the Gunnison River, dark rock, and dramatic rim overlooks.",
+    hero: {
+      eyebrow: "Featured Park",
+      tagline:
+        "A Colorado canyon park where old rock, shadow, and the Gunnison River compress into a vertical wilderness.",
+      landmarkLabel: "Black Canyon walls, Gunnison River, and shadowed rim country",
+      titlePrimarySize: "clamp(3.7rem, 10.8vw, 7.6rem)",
+      titleSecondarySize: "clamp(0.78rem, 1.8vw, 1.35rem)",
+      titleMaxWidth: "58rem",
+      titleOffsetY: "0vh",
+      titleStartY: "38vh",
+      titleTravelY: "-60vh",
+      titlePrimaryWhiteSpace: "nowrap",
+      media: {
+        background: "./assets/BLCA/blackcanyon-hero-background.webp",
+        backgroundPosition: "center center",
+        backgroundInset: "0",
+        backgroundParallaxSpeed: "0.04",
+        backgroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        backgroundAsImage: true,
+        backgroundFilter: "none",
+        foreground: "./assets/BLCA/blackcanyon-hero-foreground.png",
+        foregroundWidth: "100%",
+        foregroundHeight: "100%",
+        foregroundBottom: "0",
+        foregroundLeft: "0",
+        foregroundNodeX: "0",
+        foregroundFit: "cover",
+        foregroundPosition: "center center",
+        foregroundParallaxSpeed: "0.08",
+        foregroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        foregroundFilter: "none",
+        foregroundTravel: "0vh",
+        foregroundAlt:
+          "Dark cliffs and narrow canyon walls at Black Canyon of the Gunnison National Park",
+      },
+      highlightTitle:
+        "A Colorado canyon where the Gunnison River cuts through some of North America's oldest and steepest rock",
+      highlightBody:
+        "Established as Black Canyon of the Gunnison National Monument on March 2, 1933, and redesignated as a national park on October 21, 1999, Black Canyon protects a deep, narrow gorge carved by the Gunnison River. Its power comes from compression: sheer walls, dark Precambrian rock, sharp spires, and a river that has spent millions of years cutting into resistant stone.",
+      stats: [
+        { label: "National park", value: "1999" },
+        { label: "Greatest depth", value: "2,722 ft" },
+        { label: "River", value: "Gunnison" },
+      ],
+    },
+    overview: {
+      title:
+        "A steep, narrow canyon where river force, uplift, and ancient rock create a darker kind of grandeur.",
+      body: "Black Canyon of the Gunnison sits on Colorado's western slope, where the Gunnison River drops through a gorge that feels severe, intimate, and immense at the same time. Unlike wider canyon landscapes, Black Canyon often reveals itself through vertical shock: cliff faces plunging into shadow, rim overlooks looking almost straight down, and old rock walls holding light for only parts of the day.",
+      notes: [
+        {
+          title: "Deep, steep, and narrow",
+          text: "NPS describes the canyon as an impressive combination of depth, steepness, and narrowness, with the greatest depth reaching 2,722 feet near Warner Point.",
+        },
+        {
+          title: "Ancient rock exposed",
+          text: "The park exposes nearly two-billion-year-old Precambrian basement rocks, including metamorphic and igneous rocks shaped by heat, pressure, uplift, and erosion.",
+        },
+        {
+          title: "Two rims, one canyon",
+          text: "The canyon divides the park into North Rim and South Rim areas. There is no bridge or road through the park connecting the rims, so each side feels distinct.",
+        },
+      ],
+    },
+    chapters: [
+      {
+        title:
+          "Black Canyon begins with old, hard rock lifted high enough for a river to cut into it.",
+        body: "The canyon's walls are windows into deep geologic time. Ancient rocks were buried, altered by heat and pressure, uplifted, and later exposed as the Gunnison River began carving downward. Because the rock is so resistant, the canyon developed as a narrow, steep gorge rather than a broad valley, giving the place its compressed and shadowed character.",
+        factLabel: "Geology",
+        fact: "NPS notes that Black Canyon exposes nearly two-billion-year-old Precambrian basement rocks, one of the strongest parts of the park's geologic story.",
+        scenicLabel: "Ancient dark canyon walls cut by the Gunnison River",
+        art: {
+          top: "#111827",
+          mid: "#4a5962",
+          bottom: "#9b8065",
+          orb: "#f3c982",
+          orbGlow: "rgba(243, 193, 118, 0.24)",
+          haze: "rgba(132, 155, 164, 0.18)",
+          layerA: "#667177",
+          layerB: "#374149",
+          layerC: "#151b21",
+          river: "rgba(120, 181, 202, 0.28)",
+          riverOpacity: "0.18",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbLeft: "16%",
+          orbTop: "13%",
+        },
+      },
+      {
+        title:
+          "Then the Gunnison River turns gravity into force, dropping fast enough to keep cutting downward.",
+        body: "The river is the canyon's engine. Snowmelt from surrounding mountains helped establish the Gunnison's course, and the river's steep gradient gave it power to incise through resistant stone. Even now, the canyon's scale is inseparable from the river below, which makes the walls feel taller, darker, and more dramatic from the rim.",
+        factLabel: "River",
+        fact: "NPS lists the Gunnison River's average descent over the canyon's full length as 43 feet per mile.",
+        scenicLabel: "A steep river corridor far below the canyon rim",
+        art: {
+          top: "#0c1422",
+          mid: "#3f4a52",
+          bottom: "#8a715c",
+          orb: "#ffe0a6",
+          orbGlow: "rgba(255, 215, 158, 0.22)",
+          haze: "rgba(110, 140, 152, 0.18)",
+          layerA: "#59636a",
+          layerB: "#2f3840",
+          layerC: "#11171d",
+          river: "rgba(96, 177, 207, 0.34)",
+          riverOpacity: "0.24",
+          fallsOpacity: "0.06",
+          starsOpacity: "0",
+          orbRight: "15%",
+          orbTop: "12%",
+        },
+      },
+      {
+        title:
+          "What makes the park linger is the way shadow, sky, and rim life frame the canyon's depth.",
+        body: "Black Canyon is not only stone and river. Pinyon-juniper forest, oak woodlands, rim trails, inner canyon wilderness, raptors, and night skies all shape the experience. The canyon's darkness is part of its identity, but the surrounding life gives it contrast: bright rim light above, a hidden river below, and habitats changing from upland to canyon floor.",
+        factLabel: "Ecology",
+        fact: "NPS describes habitats from pinyon-juniper forest and Gambel oak woodland to inner canyon and riparian communities along the Gunnison River.",
+        scenicLabel: "Rim woodland, shadowed cliffs, and open Colorado sky",
+        art: {
+          top: "#08111d",
+          mid: "#35463f",
+          bottom: "#8f7859",
+          orb: "#fff0c6",
+          orbGlow: "rgba(242, 218, 175, 0.22)",
+          haze: "rgba(126, 152, 137, 0.16)",
+          layerA: "#5f6d57",
+          layerB: "#354736",
+          layerC: "#172218",
+          river: "rgba(116, 184, 204, 0.22)",
+          riverOpacity: "0.16",
+          fallsOpacity: "0",
+          starsOpacity: "0.18",
+          orbLeft: "18%",
+          orbTop: "14%",
+        },
+      },
+    ],
+    facts: [
+      {
+        label: "History",
+        title: "From monument to national park",
+        text: "Black Canyon of the Gunnison was established as a national monument on March 2, 1933, and redesignated as a national park on October 21, 1999.",
+      },
+      {
+        label: "Dimensions",
+        title: "Depth and narrowness define the drama",
+        text: "The canyon reaches a greatest depth of 2,722 feet near Warner Point, and the Narrows reaches only about 40 feet wide at river level.",
+      },
+      {
+        label: "Landscape",
+        title: "The park is severe by design",
+        text: "Black Canyon's character comes from a rare combination of steep walls, old resistant rock, shadow, rim overlooks, and the Gunnison River far below.",
+      },
+    ],
+    cta: {
+      meta: "Trip planning",
+      title: "Open the official Black Canyon of the Gunnison National Park site.",
+      text: "Use the official NPS site for road status, rim access, trail conditions, inner canyon guidance, camping, and seasonal planning details before a visit.",
+      label: "Visit Black Canyon on NPS",
+    },
+    theme: {
+      bgTop: "#050910",
+      bgBottom: "#11100e",
+      surface: "rgba(12, 15, 18, 0.74)",
+      surfaceStrong: "rgba(15, 18, 22, 0.92)",
+      card: "rgba(227, 226, 217, 0.08)",
+      cardStrong: "rgba(227, 226, 217, 0.13)",
+      line: "rgba(205, 202, 184, 0.16)",
+      text: "#f1eee6",
+      muted: "#c5bdae",
+      accent: "#9eb2b9",
+      accentBright: "#f3d49a",
+      accentSecondary: "#7db4c5",
+      shadow: "rgba(0, 0, 0, 0.42)",
+      heroSkyTop: "#101827",
+      heroSkyBottom: "#4d5960",
+      heroHorizon: "rgba(223, 191, 137, 0.38)",
+      heroRidgeBack: "#59646a",
+      heroRidgeMid: "#323b42",
+      heroRidgeFront: "#141a1f",
+      heroGlow: "rgba(218, 184, 126, 0.2)",
+    },
+  },
   carl: {
     code: "CAVE",
     name: "Carlsbad Caverns National Park",
@@ -197,7 +1232,6 @@ const parks = {
       tagline:
         "A cave park where desert surface gives way to vast underground chambers and mineral forms.",
       landmarkLabel: "The natural entrance and cavern system beneath the Chihuahuan Desert",
-      scrollCue: "Scroll to draw the park name down from the cavern ceiling",
       titlePrimarySize: "clamp(3.3rem, 10vw, 6.6rem)",
       titleSecondarySize: "clamp(0.95rem, 2.3vw, 1.65rem)",
       titleMaxWidth: "60rem",
@@ -403,7 +1437,6 @@ const parks = {
       tagline:
         "A mountain park where an ancient reef rises straight out of the Chihuahuan Desert.",
       landmarkLabel: "El Capitan and the Guadalupe range above the desert floor",
-      scrollCue: "Scroll to bring the reef-built range into view",
       titlePrimarySize: "clamp(2.7rem, 8.8vw, 6.2rem)",
       titleSecondarySize: "clamp(0.9rem, 2vw, 1.55rem)",
       titleMaxWidth: "68rem",
@@ -602,17 +1635,27 @@ const parks = {
       tagline:
         "A layered mountain park built from ridgelines, mist, and long overlooks.",
       landmarkLabel: "Blue Ridge layers and Shenandoah atmosphere",
-      scrollCue: "Scroll to reveal the park name through the ridges",
       titlePrimarySize: "clamp(4.3rem, 12.5vw, 8.6rem)",
       titleSecondarySize: "clamp(0.95rem, 2.2vw, 1.75rem)",
       titleMaxWidth: "54rem",
-      titleOffsetY: "-7vh",
+      titleOffsetY: "-16.5vh",
       media: {
         background: "./assets/SHEN/shenandoah-hero-background.jpg",
-        backgroundPosition: "center top",
-        foreground: "./assets/SHEN/shenandoah-hero-foreground.png",
-        foregroundWidth: "min(132vw, 112rem)",
-        foregroundHeight: "auto",
+        backgroundPosition: "center center",
+        backgroundInset: "0",
+        backgroundParallaxSpeed: "0.04",
+        backgroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        foreground: "./assets/SHEN/shenandoah-hero-background.png",
+        foregroundWidth: "100%",
+        foregroundHeight: "100%",
+        foregroundBottom: "0",
+        foregroundLeft: "0",
+        foregroundNodeX: "0",
+        foregroundFit: "cover",
+        foregroundPosition: "center center",
+        foregroundParallaxSpeed: "0.08",
+        foregroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        foregroundFilter: "none",
         foregroundTravel: "0vh",
         foregroundAlt:
           "A forested Shenandoah ridge rising across the foreground of the Blue Ridge",
@@ -797,7 +1840,6 @@ const parks = {
       tagline:
         "A dune park where an ancient sea becomes brilliant white sand under open desert sky.",
       landmarkLabel: "White gypsum dunes rolling across the Tularosa Basin",
-      scrollCue: "Scroll to draw the park name out across the dune field",
       titlePrimarySize: "clamp(3.7rem, 11.2vw, 7.6rem)",
       titleSecondarySize: "clamp(0.95rem, 2.3vw, 1.7rem)",
       titleMaxWidth: "58rem",
@@ -856,6 +1898,11 @@ const parks = {
         factLabel: "Geology",
         fact: "NPS describes White Sands as the world's largest gypsum dunefield, sustained by the hydrologic and climatic cycle of the Tularosa Basin.",
         scenicLabel: "A young dune field built from ancient marine gypsum",
+        image: {
+          src: "./assets/SAND/white-sands-story-1.webp",
+          alt: "White gypsum dunes under a cloud-filled sky at White Sands National Park",
+          position: "center center",
+        },
         art: {
           top: "#9db7d4",
           mid: "#d8d8d0",
@@ -881,6 +1928,11 @@ const parks = {
         factLabel: "Landscape",
         fact: "The dunefield is active and dynamic, constantly reshaped by wind into new ridges, slip faces, and lines of shadow.",
         scenicLabel: "Wind-shaped dunes carrying light into the distance",
+        image: {
+          src: "./assets/SAND/white-sands-story-2.jpg",
+          alt: "White dunes and desert plants under a deep blue sky at White Sands National Park",
+          position: "center center",
+        },
         art: {
           top: "#b5cbe2",
           mid: "#e6e0d6",
@@ -906,6 +1958,11 @@ const parks = {
         factLabel: "Life and time",
         fact: "NPS highlights both the park's white-adapted species and the ancient footprints of the Lake Otero basin as part of White Sands' broader significance.",
         scenicLabel: "Tracks and living movement across a bright dune surface",
+        image: {
+          src: "./assets/SAND/white-sands-story-3.jpg",
+          alt: "Footprints crossing bright dunes with a lone hiker in White Sands National Park",
+          position: "center center",
+        },
         art: {
           top: "#8fa8c2",
           mid: "#c8d0d7",
@@ -971,12 +2028,240 @@ const parks = {
       heroGlow: "rgba(255, 241, 217, 0.24)",
     },
   },
+  zion: {
+    code: "ZION",
+    name: "Zion National Park",
+    location: "Springdale, Utah",
+    shortName: "Zion",
+    link: "https://www.nps.gov/zion/index.htm",
+    drawerSummary:
+      "Towering sandstone walls, the Virgin River, narrow canyons, and a desert oasis set high on the Colorado Plateau.",
+    hero: {
+      eyebrow: "Featured Park",
+      tagline:
+        "A canyon park where the Virgin River cuts through towering Navajo Sandstone and hanging gardens.",
+      landmarkLabel: "Zion Canyon beneath cream, rose, and red sandstone walls",
+      titlePrimarySize: "clamp(4.5rem, 13.4vw, 8.9rem)",
+      titleSecondarySize: "clamp(0.95rem, 2.15vw, 1.7rem)",
+      titleMaxWidth: "50rem",
+      titleOffsetY: "-8vh",
+      titlePrimaryWhiteSpace: "nowrap",
+      titleSecondaryWhiteSpace: "nowrap",
+      media: {
+        background: "./assets/ZION/zion-hero-background.webp",
+        backgroundPosition: "center center",
+        backgroundInset: "0",
+        backgroundParallaxSpeed: "0.04",
+        backgroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        foreground: "./assets/ZION/zion-hero-foreground.png",
+        foregroundWidth: "100%",
+        foregroundHeight: "100%",
+        foregroundBottom: "0",
+        foregroundLeft: "0",
+        foregroundNodeX: "0",
+        foregroundFit: "cover",
+        foregroundPosition: "center center",
+        foregroundParallaxSpeed: "0.08",
+        foregroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        foregroundFilter: "none",
+        foregroundTravel: "0vh",
+        foregroundAlt:
+          "Layered Zion cliffs rising above the foreground canyon in southwestern Utah",
+      },
+      highlightTitle:
+        "A Utah canyon park where uplift, sandstone, and the Virgin River create vertical scale",
+      highlightBody:
+        "Protected first as Mukuntuweap National Monument on July 31, 1909, and established as Zion National Park on November 19, 1919, Zion preserves a canyon landscape shaped by long sedimentary history, uplift across the Colorado Plateau, and ongoing river erosion. Its signature feeling comes from height and contrast: sheer walls, bright stone, cool river corridors, and desert light moving through a narrow canyon.",
+      stats: [
+        { label: "Established", value: "1919" },
+        { label: "Signature", value: "Zion Canyon" },
+        { label: "River", value: "Virgin River" },
+      ],
+    },
+    overview: {
+      title:
+        "A high-desert canyon park where sandstone cliffs, river corridors, and hanging gardens meet.",
+      body: "Zion sits on the western edge of the Colorado Plateau in southwestern Utah, where the Virgin River and its tributaries cut through immense layers of sedimentary rock. The park feels both monumental and sheltered at once: broad mesas and high country surround a canyon whose floor holds cottonwoods, seeps, springs, and shade beneath walls of cream, pink, and red sandstone.",
+      notes: [
+        {
+          title: "The river builds the experience",
+          text: "Zion Canyon's scale depends on the Virgin River. The same water that supports riparian life and hanging gardens is also what keeps excavating the canyon and its narrows.",
+        },
+        {
+          title: "Part of a larger geologic staircase",
+          text: "NPS places Zion within the Grand Staircase sequence of cliffs and plateaus, where rock layers exposed here connect geologically to Bryce Canyon above and the Grand Canyon below.",
+        },
+        {
+          title: "Height creates diversity",
+          text: "With roughly 5,000 feet of elevation change across the park, Zion holds desert slopes, riverbank habitat, pinyon-juniper woodland, and higher forested terrain in one protected landscape.",
+        },
+      ],
+    },
+    chapters: [
+      {
+        title:
+          "Zion begins as a long sedimentary record, then rises and breaks open into cliffs the river can cut through.",
+        body: "For millions of years, shifting environments laid down the sediments that became Zion's stone, from shallow seas and river systems to immense desert dunes. Later uplift raised the plateau, and the Virgin River gained the force to carve downward through those layers. What visitors see now is not a static canyon, but a landscape still being shaped by water, gravity, and time.",
+        factLabel: "Geology",
+        fact: "NPS describes Zion's famous cliffs as sandstone formed from ancient dune fields and notes that uplift gave the Virgin River the cutting power to excavate the canyon.",
+        scenicLabel: "Sandstone walls rising from canyon floor to plateau light",
+        image: {
+          src: "./assets/ZION/zion-story-1.jpg",
+          alt: "Massive sandstone cliffs rising above the canyon floor in Zion National Park",
+          position: "center center",
+        },
+        art: {
+          top: "#16304b",
+          mid: "#a56445",
+          bottom: "#efc48f",
+          orb: "#ffe3b4",
+          orbGlow: "rgba(255, 209, 142, 0.3)",
+          haze: "rgba(232, 191, 147, 0.22)",
+          layerA: "#ca845a",
+          layerB: "#7e5238",
+          layerC: "#35251c",
+          river: "rgba(191, 218, 231, 0.2)",
+          riverOpacity: "0.16",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbLeft: "17%",
+          orbTop: "13%",
+        },
+      },
+      {
+        title:
+          "Then the park narrows into one of the West's clearest expressions of vertical scale.",
+        body: "In Zion Canyon, distance is measured less by miles than by the height of the walls and the tightness of the space between them. Cream and red Navajo Sandstone rises above cottonwoods and the river, while side canyons, switchbacks, and rockfall remind you the landscape is always in motion. Zion's drama comes from being held inside the canyon rather than simply looking at it from afar.",
+        factLabel: "Canyon",
+        fact: "NPS notes that Zion has 2,000-foot Navajo Sandstone cliffs and that the Virgin River still cuts a slot canyon through the Narrows upstream from the Temple of Sinawava.",
+        scenicLabel: "Zion Canyon tightening around river, shade, and stone",
+        image: {
+          src: "./assets/ZION/zion-story-2.jpg",
+          alt: "Zion Canyon walls glowing above the river corridor in Zion National Park",
+          position: "center center",
+        },
+        art: {
+          top: "#1b3654",
+          mid: "#b77754",
+          bottom: "#f1d0a0",
+          orb: "#ffe7bc",
+          orbGlow: "rgba(255, 220, 168, 0.26)",
+          haze: "rgba(245, 211, 172, 0.24)",
+          layerA: "#d08d64",
+          layerB: "#88563d",
+          layerC: "#3f2b20",
+          river: "rgba(180, 212, 227, 0.22)",
+          riverOpacity: "0.18",
+          fallsOpacity: "0.08",
+          starsOpacity: "0",
+          orbRight: "15%",
+          orbTop: "12%",
+        },
+      },
+      {
+        title:
+          "What softens that stone severity is water, shade, and life gathering anywhere the canyon gives them room.",
+        body: "Despite its cliff-lined image, Zion is not only rock. The river corridor, seeps, springs, and hanging gardens create pockets of coolness and color that change the park's emotional register. Cottonwoods line parts of the canyon floor, wildlife follows the water, and the transition from desert slope to shaded canyon makes Zion feel like an oasis built inside a stone cathedral.",
+        factLabel: "Ecology",
+        fact: "NPS highlights Zion's seeps, springs, waterfalls, and hanging gardens as part of the habitat diversity created by the park's river corridor and elevation range.",
+        scenicLabel: "Water and hanging gardens tucked beneath desert cliffs",
+        image: {
+          src: "./assets/ZION/zion-story-3.jpeg",
+          alt: "Trees and sandstone cliffs framing Zion's oasis-like canyon floor",
+          position: "center center",
+        },
+        art: {
+          top: "#12263b",
+          mid: "#5d6f65",
+          bottom: "#d5b084",
+          orb: "#fff0cd",
+          orbGlow: "rgba(245, 225, 186, 0.24)",
+          haze: "rgba(195, 213, 199, 0.18)",
+          layerA: "#9a805d",
+          layerB: "#53634d",
+          layerC: "#223027",
+          river: "rgba(198, 229, 233, 0.22)",
+          riverOpacity: "0.18",
+          fallsOpacity: "0.2",
+          starsOpacity: "0.16",
+          orbLeft: "19%",
+          orbTop: "14%",
+        },
+      },
+    ],
+    facts: [
+      {
+        label: "History",
+        title: "Protected first as Mukuntuweap",
+        text: "President Taft established Mukuntuweap National Monument on July 31, 1909. The area was renamed Zion National Monument in 1918 and became Zion National Park on November 19, 1919.",
+      },
+      {
+        label: "Geology",
+        title: "Ancient dunes became canyon walls",
+        text: "Some of Zion's most iconic cliffs are Navajo Sandstone, rock formed from ancient windblown dunes that later hardened, rose with the plateau, and were cut open by erosion.",
+      },
+      {
+        label: "Landscape",
+        title: "A desert oasis inside a canyon",
+        text: "Zion's identity comes from contrast: sheer stone and flowing water, dry slopes and riparian shade, broad plateau country and one deeply incised main canyon.",
+      },
+    ],
+    cta: {
+      meta: "Trip planning",
+      title: "Open the official Zion National Park site.",
+      text: "Use the official NPS site for shuttle schedules, current conditions, trail safety updates, and seasonal planning details before a visit.",
+      label: "Visit Zion on NPS",
+    },
+    theme: {
+      bgTop: "#08111a",
+      bgBottom: "#18110d",
+      surface: "rgba(16, 19, 23, 0.72)",
+      surfaceStrong: "rgba(18, 22, 27, 0.9)",
+      card: "rgba(247, 235, 218, 0.09)",
+      cardStrong: "rgba(247, 235, 218, 0.14)",
+      line: "rgba(236, 203, 171, 0.16)",
+      text: "#f8f1e7",
+      muted: "#d2c1ad",
+      accent: "#dd8752",
+      accentBright: "#ffd8ab",
+      accentSecondary: "#9fc3da",
+      shadow: "rgba(0, 0, 0, 0.34)",
+      heroSkyTop: "#18324f",
+      heroSkyBottom: "#be734b",
+      heroHorizon: "rgba(255, 213, 152, 0.46)",
+      heroRidgeBack: "#9a6a4b",
+      heroRidgeMid: "#65412c",
+      heroRidgeFront: "#312118",
+      heroGlow: "rgba(255, 194, 132, 0.24)",
+    },
+  },
+};
+
+const HOME_THEME = {
+  bgTop: "#040910",
+  bgBottom: "#15100c",
+  surface: "rgba(10, 14, 18, 0.72)",
+  surfaceStrong: "rgba(12, 16, 22, 0.9)",
+  card: "rgba(235, 229, 216, 0.08)",
+  cardStrong: "rgba(235, 229, 216, 0.13)",
+  line: "rgba(221, 202, 168, 0.16)",
+  text: "#f8f1e7",
+  muted: "#c9bbab",
+  accent: "#e3a25f",
+  accentBright: "#ffe0aa",
+  accentSecondary: "#83c7c1",
+  shadow: "rgba(0, 0, 0, 0.38)",
+  heroSkyTop: "#101a28",
+  heroSkyBottom: "#574838",
+  heroHorizon: "rgba(255, 215, 156, 0.42)",
+  heroRidgeBack: "#6e665b",
+  heroRidgeMid: "#3d423e",
+  heroRidgeFront: "#171b18",
+  heroGlow: "rgba(255, 202, 132, 0.24)",
 };
 
 const state = {
-  activeParkKey: Object.entries(parks).sort(([, a], [, b]) =>
-    a.name.localeCompare(b.name),
-  )[0][0],
+  activeParkKey: null,
   drawerOpen: false,
 };
 
@@ -985,6 +2270,7 @@ const parkList = document.getElementById("parkList");
 const parkDrawer = document.getElementById("parkDrawer");
 const drawerBackdrop = document.getElementById("drawerBackdrop");
 const menuButton = document.getElementById("menuButton");
+const homeButton = document.getElementById("homeButton");
 const drawerClose = document.getElementById("drawerClose");
 const currentParkMeta = document.getElementById("currentParkMeta");
 
@@ -1040,6 +2326,63 @@ function sceneStyle(art) {
   return Object.entries(entries)
     .map(([key, value]) => `${key}:${value}`)
     .join(";");
+}
+
+function getSortedParkEntries() {
+  return Object.entries(parks).sort(([, a], [, b]) => a.name.localeCompare(b.name));
+}
+
+function getStoryImages() {
+  return getSortedParkEntries()
+    .flatMap(([key, park]) =>
+      park.chapters.map((chapter, index) => ({
+        key,
+        parkName: park.shortName,
+        src: chapter.image?.src,
+        alt: chapter.image?.alt || chapter.scenicLabel,
+        index,
+      })),
+    )
+    .filter(image => image.src);
+}
+
+function renderHomeImageGlobe() {
+  const images = getStoryImages();
+  const total = images.length || 1;
+
+  return images
+    .map((image, index) => {
+      const angle = (index / total) * Math.PI * 2;
+      const ring = index % 3;
+      const radiusX = [47, 40, 33][ring];
+      const radiusY = [40, 32, 25][ring];
+      const left = 50 + Math.cos(angle) * radiusX;
+      const top = 50 + Math.sin(angle) * radiusY;
+      const floatX = (((index * 37) % 13) - 6) * 0.28;
+      const floatY = (((index * 53) % 15) - 7) * 0.24;
+      const rotate = ((index * 29) % 24) - 12;
+      const spin = index % 2 === 0 ? "5deg" : "-5deg";
+      const duration = 15 + (index % 7) * 2.2;
+      const delay = -1 * (index % 11) * 1.25;
+      const scale = 0.88 + (ring * 0.08);
+      const depth = 1 + (index % 5);
+      const size = [
+        "clamp(4.7rem, 9vw, 8.5rem)",
+        "clamp(4rem, 7vw, 7rem)",
+        "clamp(3.4rem, 5.8vw, 5.8rem)",
+      ][ring];
+
+      return `
+        <figure
+          class="home-orbit-card"
+          style="--home-card-left: ${left.toFixed(2)}%; --home-card-top: ${top.toFixed(2)}%; --home-card-size: ${size}; --home-card-float-x: ${floatX.toFixed(2)}rem; --home-card-float-y: ${floatY.toFixed(2)}rem; --home-card-rotate: ${rotate}deg; --home-card-spin: ${spin}; --home-card-duration: ${duration.toFixed(1)}s; --home-card-delay: ${delay.toFixed(1)}s; --home-card-scale: ${scale.toFixed(2)}; --home-card-depth: ${depth};"
+          aria-hidden="true"
+        >
+          <img src="${image.src}" alt="" loading="${index < 8 ? "eager" : "lazy"}" decoding="async" />
+        </figure>
+      `;
+    })
+    .join("");
 }
 
 function getHeroTitleParts(park) {
@@ -1129,6 +2472,33 @@ function renderHeroStage(park) {
 
   if (park.hero.media?.background && park.hero.media?.foreground) {
     const backgroundPosition = park.hero.media.backgroundPosition || "center 28%";
+    const backgroundInset = park.hero.media.backgroundInset || "-4%";
+    const backgroundParallaxSpeed = park.hero.media.backgroundParallaxSpeed || "0.04";
+    const backgroundScale =
+      park.hero.media.backgroundScale ||
+      "calc(1.08 - (var(--hero-progress, 0) * 0.04))";
+    const backgroundFilter =
+      park.hero.media.backgroundFilter || "saturate(0.98) contrast(1.04)";
+    const backgroundStyle = `--hero-photo-bg-inset: ${backgroundInset}; --hero-photo-bg-scale: ${backgroundScale}; --hero-photo-bg-filter: ${backgroundFilter};`;
+    const backgroundLayer = park.hero.media.backgroundAsImage
+      ? `
+        <img
+          class="hero-photo-bg hero-photo-bg-image parallax-node"
+          data-parallax-speed="${backgroundParallaxSpeed}"
+          src="${park.hero.media.background}"
+          alt=""
+          style="${backgroundStyle} --hero-photo-bg-position: ${backgroundPosition};"
+          aria-hidden="true"
+        />
+      `
+      : `
+        <div
+          class="hero-photo-bg parallax-node"
+          data-parallax-speed="${backgroundParallaxSpeed}"
+          style="background-image: url('${park.hero.media.background}'); background-position: ${backgroundPosition}; ${backgroundStyle}"
+          aria-hidden="true"
+        ></div>
+      `;
     const foregroundWidth = park.hero.media.foregroundWidth || "auto";
     const foregroundHeight =
       park.hero.media.foregroundHeight || "clamp(18rem, 42vh, 28rem)";
@@ -1137,16 +2507,17 @@ function renderHeroStage(park) {
     const foregroundNodeX = park.hero.media.foregroundNodeX || "-50%";
     const foregroundFit = park.hero.media.foregroundFit || "contain";
     const foregroundPosition = park.hero.media.foregroundPosition || "center center";
+    const foregroundParallaxSpeed = park.hero.media.foregroundParallaxSpeed || "0.08";
+    const foregroundScale =
+      park.hero.media.foregroundScale ||
+      "calc(1.01 - (var(--hero-progress, 0) * 0.02))";
+    const foregroundFilter =
+      park.hero.media.foregroundFilter || "drop-shadow(0 16px 34px rgba(0, 0, 0, 0.28))";
     const foregroundTravel = park.hero.media.foregroundTravel || "14vh";
 
     return `
       <div class="hero-stage hero-stage--photo">
-        <div
-          class="hero-photo-bg parallax-node"
-          data-parallax-speed="0.04"
-          style="background-image: url('${park.hero.media.background}'); background-position: ${backgroundPosition};"
-          aria-hidden="true"
-        ></div>
+        ${backgroundLayer}
         <div class="hero-photo-tint" aria-hidden="true"></div>
         <div class="hero-photo-glow" aria-hidden="true"></div>
         <span class="hero-stage-caption">${park.hero.landmarkLabel}</span>
@@ -1155,12 +2526,11 @@ function renderHeroStage(park) {
         </div>
         <img
           class="hero-foreground-image parallax-node"
-          data-parallax-speed="0.08"
+          data-parallax-speed="${foregroundParallaxSpeed}"
           src="${park.hero.media.foreground}"
           alt="${park.hero.media.foregroundAlt}"
-          style="--hero-foreground-width: ${foregroundWidth}; --hero-foreground-height: ${foregroundHeight}; --hero-foreground-bottom: ${foregroundBottom}; --hero-foreground-left: ${foregroundLeft}; --hero-foreground-node-x: ${foregroundNodeX}; --hero-foreground-fit: ${foregroundFit}; --hero-foreground-position: ${foregroundPosition}; --hero-foreground-travel: ${foregroundTravel};"
+          style="--hero-foreground-width: ${foregroundWidth}; --hero-foreground-height: ${foregroundHeight}; --hero-foreground-bottom: ${foregroundBottom}; --hero-foreground-left: ${foregroundLeft}; --hero-foreground-node-x: ${foregroundNodeX}; --hero-foreground-fit: ${foregroundFit}; --hero-foreground-position: ${foregroundPosition}; --hero-foreground-scale: ${foregroundScale}; --hero-foreground-filter: ${foregroundFilter}; --hero-foreground-travel: ${foregroundTravel};"
         />
-        <span class="hero-scroll-cue">${park.hero.scrollCue}</span>
       </div>
     `;
   }
@@ -1177,15 +2547,12 @@ function renderHeroStage(park) {
       <div class="hero-ridge ridge-back parallax-node" data-parallax-speed="0.14" aria-hidden="true"></div>
       <div class="hero-ridge ridge-mid parallax-node" data-parallax-speed="0.22" aria-hidden="true"></div>
       <div class="hero-ridge ridge-front parallax-node" data-parallax-speed="0.28" aria-hidden="true"></div>
-      <span class="hero-scroll-cue">${park.hero.scrollCue}</span>
     </div>
   `;
 }
 
 function renderDrawer() {
-  const parkEntries = Object.entries(parks).sort(([, a], [, b]) =>
-    a.name.localeCompare(b.name),
-  );
+  const parkEntries = getSortedParkEntries();
 
   parkList.innerHTML = parkEntries
     .map(
@@ -1212,8 +2579,87 @@ function renderDrawer() {
   });
 }
 
+function renderHomeMeta() {
+  currentParkMeta.innerHTML = "<strong>Park Atlas</strong>Choose a park";
+}
+
 function renderMeta(park) {
   currentParkMeta.innerHTML = `<strong>${park.shortName}</strong>${park.location}`;
+}
+
+function renderHomePage() {
+  const parkEntries = getSortedParkEntries();
+
+  setTheme(HOME_THEME);
+  renderHomeMeta();
+  document.title = "Park Atlas";
+
+  app.innerHTML = `
+    <section class="home-hero" aria-labelledby="homeTitle">
+      <div class="home-hero-stage">
+        <div class="home-globe-rings" aria-hidden="true"></div>
+        <div class="home-image-globe parallax-node" data-parallax-speed="0.05">
+          ${renderHomeImageGlobe()}
+        </div>
+
+        <div class="home-title-card">
+          <h1 id="homeTitle">Park Atlas</h1>
+          <p>
+            A cinematic field guide for discovering national parks through their
+            landscapes, stories, wildlife, history, and the moments that make each
+            place unforgettable.
+          </p>
+
+          <div class="home-actions">
+            <button class="cta-button" type="button" data-open-drawer>Explore parks</button>
+            <button class="home-secondary-button" type="button" data-random-park>
+              Start somewhere wild
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-summary section">
+      <article class="home-summary-card glass-card">
+        <div class="section-intro">
+          <p class="eyebrow">What This Is</p>
+          <h2>A fun, immersive way to get a quick feel for each national park.</h2>
+          <p class="lead">
+            Park Atlas gives you a visual first look at each park, then shares the big
+            ideas that make the place memorable: the landscape, the story, the scale,
+            and the details worth knowing at a glance.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="home-collection section">
+      <div class="section-intro">
+        <p class="eyebrow">Current Atlas</p>
+        <h2>Choose a park and enter its landscape.</h2>
+      </div>
+
+      <div class="home-park-grid">
+        ${parkEntries
+          .map(
+            ([key, park]) => `
+              <button class="home-park-card" type="button" data-home-park-key="${key}">
+                <span class="park-item-code">${park.code}</span>
+                <span class="home-park-name">${park.name}</span>
+                <span class="home-park-location">${park.location}</span>
+                <span class="home-park-summary">${park.drawerSummary}</span>
+              </button>
+            `,
+          )
+          .join("")}
+      </div>
+    </section>
+  `;
+
+  heroSection = null;
+  parallaxNodes = Array.from(app.querySelectorAll(".parallax-node"));
+  updateParallax();
 }
 
 function renderPage() {
@@ -1352,6 +2798,23 @@ function toggleDrawer(force) {
   menuButton.setAttribute("aria-expanded", String(state.drawerOpen));
 }
 
+function setHome() {
+  if (state.drawerOpen) {
+    toggleDrawer(false);
+  }
+
+  if (state.activeParkKey === null) {
+    window.scrollTo({ top: 0, behavior: "auto" });
+    return;
+  }
+
+  state.activeParkKey = null;
+  renderDrawer();
+  renderHomePage();
+  window.scrollTo({ top: 0, behavior: "auto" });
+  updateParallax();
+}
+
 function setActivePark(key) {
   if (!parks[key] || key === state.activeParkKey) {
     return;
@@ -1360,6 +2823,8 @@ function setActivePark(key) {
   state.activeParkKey = key;
   renderDrawer();
   renderPage();
+  window.scrollTo({ top: 0, behavior: "auto" });
+  updateParallax();
 }
 
 function updateParallax() {
@@ -1401,8 +2866,31 @@ function queueParallax() {
 
 function bindEvents() {
   menuButton.addEventListener("click", () => toggleDrawer());
+  homeButton.addEventListener("click", setHome);
   drawerClose.addEventListener("click", () => toggleDrawer(false));
   drawerBackdrop.addEventListener("click", () => toggleDrawer(false));
+
+  app.addEventListener("click", event => {
+    const drawerTrigger = event.target.closest("[data-open-drawer]");
+    const randomTrigger = event.target.closest("[data-random-park]");
+    const parkTrigger = event.target.closest("[data-home-park-key]");
+
+    if (drawerTrigger) {
+      toggleDrawer(true);
+      return;
+    }
+
+    if (randomTrigger) {
+      const parkEntries = getSortedParkEntries();
+      const randomEntry = parkEntries[Math.floor(Math.random() * parkEntries.length)];
+      setActivePark(randomEntry[0]);
+      return;
+    }
+
+    if (parkTrigger) {
+      setActivePark(parkTrigger.dataset.homeParkKey);
+    }
+  });
 
   document.addEventListener("keydown", event => {
     if (event.key === "Escape" && state.drawerOpen) {
@@ -1416,7 +2904,7 @@ function bindEvents() {
 
 function init() {
   renderDrawer();
-  renderPage();
+  renderHomePage();
   bindEvents();
 }
 
