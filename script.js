@@ -11,7 +11,8 @@ const parks = {
       eyebrow: "Featured Park",
       tagline:
         "A North Atlantic park where granite mountains meet cold ocean, spruce forest, and sunrise light.",
-      landmarkLabel: "Cadillac Mountain and the glaciated coast of Mount Desert Island",
+      landmarkLabel:
+        "Cadillac Mountain and the glaciated coast of Mount Desert Island",
       titlePrimarySize: "clamp(4.35rem, 12.8vw, 8.7rem)",
       titleSecondarySize: "clamp(0.95rem, 2.2vw, 1.75rem)",
       titleMaxWidth: "52rem",
@@ -104,7 +105,8 @@ const parks = {
         body: "Acadia's scale is not western immensity. It is compression. A summit can feel exposed to the whole Atlantic, while a pond or forest path nearby feels enclosed and quiet. Cadillac Mountain, the Park Loop Road, and the carriage road system all make that compression legible, moving visitors through a designed rhythm of overlooks, stone bridges, shoreline, and woods.",
         factLabel: "Movement",
         fact: "NPS highlights 27 miles of historic motor roads, 158 miles of hiking trails, and 45 miles of carriage roads within Acadia.",
-        scenicLabel: "Carriage roads, stone bridges, and summit views above the sea",
+        scenicLabel:
+          "Carriage roads, stone bridges, and summit views above the sea",
         image: {
           src: "./assets/ACAD/acadia-story-2.jpg",
           alt: "The summit of Cadillac Mountain overlooking Acadia National Park",
@@ -134,7 +136,8 @@ const parks = {
         body: "Acadia is not just a scenic island park. It is Wabanaki homeland, a place shaped by conservation philanthropy, village edges, working coastlines, and a long tradition of people moving through the landscape. The park's beauty comes through that layering: dawn on granite, tidepools below cliffs, spruce shadows, carriage roads in the woods, and ocean air moving over the mountains.",
         factLabel: "Culture",
         fact: "NPS notes that Acadia's national park story grew from donated land and preservation efforts, with the place known across time as Pemetic, Sieur de Monts, Lafayette, and Acadia.",
-        scenicLabel: "Evergreen forest and ocean light around Mount Desert Island",
+        scenicLabel:
+          "Evergreen forest and ocean light around Mount Desert Island",
         image: {
           src: "./assets/ACAD/acadia-story-3.jpg",
           alt: "Aerial view of Mount Desert Island with forest, coastline, and ocean around Acadia National Park",
@@ -428,7 +431,8 @@ const parks = {
       eyebrow: "Featured Park",
       tagline:
         "A prairie park where soft rock erodes into pinnacles, striped walls, and fossil-rich forms.",
-      landmarkLabel: "Badlands buttes and mixed-grass prairie in southwestern South Dakota",
+      landmarkLabel:
+        "Badlands buttes and mixed-grass prairie in southwestern South Dakota",
       titlePrimarySize: "clamp(4rem, 11.8vw, 8.2rem)",
       titleSecondarySize: "clamp(0.95rem, 2.2vw, 1.75rem)",
       titleMaxWidth: "56rem",
@@ -636,7 +640,7 @@ const parks = {
       tagline:
         "A desert park that feels carved from heat, distance, and starlight.",
       landmarkLabel: "Chisos Mountains under a Big Bend night sky",
-      titleOffsetY: "-22vh",
+      titleOffsetY: "-30vh",
       media: {
         background: "./assets/BIBE/big-bend-hero-background.png",
         foreground: "./assets/BIBE/big-bend-hero-foreground.png",
@@ -657,7 +661,8 @@ const parks = {
       ],
     },
     overview: {
-      title: "A borderlands park shaped by mountain uplift, river erosion, and immense sky.",
+      title:
+        "A borderlands park shaped by mountain uplift, river erosion, and immense sky.",
       body: "Big Bend lies in far West Texas where the Rio Grande turns through stone and the Chisos rise abruptly from the desert floor. The park protects dry basins, canyons, springs, and high country, so its story is always one of contrast: heat and elevation, silence and moving water, daylight scale and night-sky depth.",
       notes: [
         {
@@ -1036,7 +1041,8 @@ const parks = {
       eyebrow: "Featured Park",
       tagline:
         "A Colorado canyon park where old rock, shadow, and the Gunnison River compress into a vertical wilderness.",
-      landmarkLabel: "Black Canyon walls, Gunnison River, and shadowed rim country",
+      landmarkLabel:
+        "Black Canyon walls, Gunnison River, and shadowed rim country",
       titlePrimarySize: "clamp(3.7rem, 10.8vw, 7.6rem)",
       titleSecondarySize: "clamp(0.78rem, 1.8vw, 1.35rem)",
       titleMaxWidth: "58rem",
@@ -1207,7 +1213,8 @@ const parks = {
     ],
     cta: {
       meta: "Trip planning",
-      title: "Open the official Black Canyon of the Gunnison National Park site.",
+      title:
+        "Open the official Black Canyon of the Gunnison National Park site.",
       text: "Use the official NPS site for road status, rim access, trail conditions, inner canyon guidance, camping, and seasonal planning details before a visit.",
       label: "Visit Black Canyon on NPS",
     },
@@ -1234,6 +1241,205 @@ const parks = {
       heroGlow: "rgba(218, 184, 126, 0.2)",
     },
   },
+  brca: {
+    code: "BRCA",
+    name: "Bryce Canyon National Park",
+    location: "Bryce, Utah",
+    shortName: "Bryce Canyon",
+    link: "https://www.nps.gov/brca/index.htm",
+    drawerSummary:
+      "Hoodoo amphitheaters, pink cliffs, high forest, dark skies, and long Grand Staircase views from the rim.",
+    hero: {
+      eyebrow: "Featured Park",
+      tagline:
+        "A high-plateau park where frost, rain, and time carve limestone into thousands of hoodoos.",
+      landmarkLabel: "Bryce Amphitheater and the pink cliffs below the rim",
+      titlePrimarySize: "clamp(3.5rem, 10vw, 7.2rem)",
+      titleSecondarySize: "clamp(0.92rem, 2vw, 1.65rem)",
+      titleMaxWidth: "44rem",
+      titleOffsetY: "-30vh",
+      titleAlign: "right",
+      titleJustify: "end",
+      titleMargin: "0 clamp(7rem, 12vw, 10rem) 0 auto",
+      titleTransformOrigin: "right bottom",
+      titlePrimaryWhiteSpace: "nowrap",
+      titleSecondaryWhiteSpace: "nowrap",
+      media: {
+        background: "./assets/BRCA/bryce-hero-background.webp",
+        backgroundPosition: "center center",
+        backgroundInset: "0",
+        backgroundParallaxSpeed: "0.04",
+        backgroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        backgroundAsImage: true,
+        backgroundFilter: "none",
+        foreground: "./assets/BRCA/bryce-hero-foreground.png",
+        foregroundWidth: "100%",
+        foregroundHeight: "100%",
+        foregroundBottom: "0",
+        foregroundLeft: "0",
+        foregroundNodeX: "0",
+        foregroundFit: "cover",
+        foregroundPosition: "center center",
+        foregroundParallaxSpeed: "0.08",
+        foregroundScale: "calc(1.08 - (var(--hero-progress, 0) * 0.04))",
+        foregroundFilter: "none",
+        foregroundTravel: "0vh",
+        foregroundAlt:
+          "Bryce Canyon hoodoos and pink cliffs layered across the amphitheater rim",
+      },
+      highlightTitle:
+        "A Utah park of rim views and eroded stone, where hoodoos turn a high plateau into sculpture",
+      highlightBody:
+        "Protected first as Bryce Canyon National Monument on June 8, 1923, then renamed Bryce Canyon National Park in 1928, Bryce Canyon preserves the largest concentration of hoodoos on Earth. The park sits high on the Grand Staircase, where uplifted lake-bed rock meets freeze-thaw weathering, bright cliffs, dark night skies, and a sequence of amphitheaters cut below the rim.",
+      stats: [
+        { label: "National park", value: "1928" },
+        { label: "High point", value: "9,115 ft" },
+        { label: "Signature", value: "Hoodoos" },
+      ],
+    },
+    overview: {
+      title:
+        "A southern Utah rim-country park where limestone cliffs break into amphitheaters of spires, fins, and windows.",
+      body: "Bryce Canyon feels like a canyon only from a distance. On the ground, the park is a chain of overlooks and trails along a high plateau edge, looking into giant natural amphitheaters filled with orange, salmon, and cream stone. Its drama comes from repetition and detail: thousands of columns, sudden windows, narrow ridges, bristlecone pines, and huge sky above a landscape that seems almost too intricate to be accidental.",
+      notes: [
+        {
+          title: "Not one canyon",
+          text: "Bryce Canyon is best understood as a series of natural amphitheaters eroded into the plateau edge rather than a single river-carved canyon.",
+        },
+        {
+          title: "The hoodoo capital",
+          text: "NPS describes Bryce as having the largest concentration of hoodoos on Earth, which is why the park feels less like one viewpoint and more like a whole field of stone architecture.",
+        },
+        {
+          title: "High, clear, and dark",
+          text: "More than 2,000 feet of elevation change, three life zones, and notably dark night skies give Bryce more ecological range than its famous orange cliffs first suggest.",
+        },
+      ],
+    },
+    chapters: [
+      {
+        title:
+          "Bryce begins with quiet sediments, then turns theatrical when uplift and freezing nights start breaking the rock apart.",
+        body: "The cliffs and hoodoos come from sedimentary layers laid down in ancient lakes and floodplains, then lifted to high elevation on the Colorado Plateau. At Bryce, that elevation matters as much as the rock itself. Water seeps into fractures, freezes, expands, and pries stone apart, gradually turning walls into fins, windows, and isolated towers.",
+        factLabel: "Geology",
+        fact: "NPS describes Bryce's hoodoos as the product of deposition, uplift, and weathering, with freeze-thaw cycles doing much of the sculpting.",
+        scenicLabel:
+          "Bryce Amphitheater crowded with orange hoodoos beneath a wide sky",
+        image: {
+          src: "./assets/BRCA/bryce-story-2.jpg",
+          alt: "Bryce Canyon hoodoos and eroded cliffs rising beneath a bright blue sky",
+          position: "center center",
+        },
+      },
+      {
+        title:
+          "What people call Bryce Canyon is really a rim and a view, a long edge looking down into stone amphitheaters.",
+        body: "The park's signature experience is not entering one deep canyon but moving between overlooks and trails where the land drops into dense formations of spires and walls. That perspective gives Bryce its unusual geometry. You are often reading the landscape from above, where bowls of eroded stone, narrow ridges, and repeating hoodoos feel sculpted almost for theater.",
+        factLabel: "Landscape",
+        fact: "NPS emphasizes that Bryce is not actually one canyon, but a series of natural amphitheaters carved below the rim.",
+        scenicLabel:
+          "Rim viewpoints looking down into Bryce's stone amphitheaters",
+        image: {
+          src: "./assets/BRCA/bryce-story-1.jpg",
+          alt: "A wide view across dense Bryce Canyon hoodoos and amphitheater walls",
+          position: "center center",
+        },
+        art: {
+          top: "#1d3552",
+          mid: "#cf7d52",
+          bottom: "#f1c893",
+          orb: "#ffe6ba",
+          orbGlow: "rgba(255, 214, 156, 0.28)",
+          haze: "rgba(238, 189, 138, 0.24)",
+          layerA: "#da976c",
+          layerB: "#8d5537",
+          layerC: "#41271a",
+          river: "rgba(214, 230, 242, 0.12)",
+          riverOpacity: "0.08",
+          fallsOpacity: "0",
+          starsOpacity: "0",
+          orbRight: "15%",
+          orbTop: "12%",
+        },
+      },
+      {
+        title:
+          "At the park's highest reaches, Bryce opens beyond hoodoos into forest, distant plateaus, and some of the darkest skies in the country.",
+        body: "Bryce is not only stone color. The park rises into cooler forest, crosses more than 2,000 feet of elevation, and opens toward long-distance viewpoints like Rainbow and Yovimpa. By day that height sharpens visibility across the Grand Staircase; by night it helps create the kind of sky that makes the hoodoo rim feel even more remote and exposed.",
+        factLabel: "Elevation",
+        fact: "Rainbow and Yovimpa Points sit at 9,115 feet, and NPS describes Bryce as spanning three life zones with notably dark night skies.",
+        scenicLabel:
+          "High rim forest and distant plateaus under a darkening Bryce sky",
+        image: {
+          src: "./assets/BRCA/bryce-story-3.jpg",
+          alt: "Bryce Canyon hoodoos beneath the Milky Way and a glowing night sky",
+          position: "center center",
+        },
+        art: {
+          top: "#0b1530",
+          mid: "#38516e",
+          bottom: "#a97456",
+          orb: "#f2e2c4",
+          orbGlow: "rgba(228, 217, 194, 0.18)",
+          haze: "rgba(143, 173, 204, 0.18)",
+          layerA: "#847768",
+          layerB: "#4e5660",
+          layerC: "#212834",
+          river: "rgba(168, 193, 216, 0.14)",
+          riverOpacity: "0.12",
+          fallsOpacity: "0",
+          starsOpacity: "0.74",
+          orbLeft: "18%",
+          orbTop: "14%",
+        },
+      },
+    ],
+    facts: [
+      {
+        label: "History",
+        title: "Protected in stages before taking its current name",
+        text: "Bryce Canyon was proclaimed a national monument on June 8, 1923. Congress approved Utah National Park in 1924, and the park took the name Bryce Canyon National Park on February 25, 1928 before formal transfer to NPS later that year.",
+      },
+      {
+        label: "Geology",
+        title: "Freeze-thaw makes the hoodoos",
+        text: "Bryce's colorful Claron Formation is broken apart by water, ice, and erosion, turning fractured cliffs into fins, windows, and hoodoos rather than broad canyon walls.",
+      },
+      {
+        label: "Landscape",
+        title: "The park is a rim, not a single canyon",
+        text: "Its identity comes from looking into eroded amphitheaters from above, where repetition of thousands of hoodoos matters more than one isolated cliff or summit.",
+      },
+    ],
+    cta: {
+      meta: "Trip planning",
+      title: "Open the official Bryce Canyon National Park site.",
+      text: "Use the official NPS site for shuttle details, weather, road conditions, ranger programs, seasonal closures, and trip planning basics before a visit.",
+      label: "Visit Bryce Canyon on NPS",
+    },
+    theme: {
+      bgTop: "#07111a",
+      bgBottom: "#18100d",
+      surface: "rgba(14, 17, 21, 0.72)",
+      surfaceStrong: "rgba(17, 21, 25, 0.9)",
+      card: "rgba(246, 232, 215, 0.09)",
+      cardStrong: "rgba(246, 232, 215, 0.14)",
+      line: "rgba(234, 202, 171, 0.16)",
+      text: "#f8f1e8",
+      muted: "#d1c1af",
+      accent: "#e48b5e",
+      accentBright: "#ffe0b8",
+      accentSecondary: "#9fbddb",
+      shadow: "rgba(0, 0, 0, 0.34)",
+      heroSkyTop: "#7d95b7",
+      heroSkyBottom: "#d28457",
+      heroHorizon: "rgba(255, 222, 178, 0.46)",
+      heroRidgeBack: "#d0a07d",
+      heroRidgeMid: "#955d3e",
+      heroRidgeFront: "#472c1e",
+      heroGlow: "rgba(255, 205, 145, 0.22)",
+    },
+  },
   carl: {
     code: "CAVE",
     name: "Carlsbad Caverns National Park",
@@ -1246,7 +1452,8 @@ const parks = {
       eyebrow: "Featured Park",
       tagline:
         "A cave park where desert surface gives way to vast underground chambers and mineral forms.",
-      landmarkLabel: "The natural entrance and cavern system beneath the Chihuahuan Desert",
+      landmarkLabel:
+        "The natural entrance and cavern system beneath the Chihuahuan Desert",
       titlePrimarySize: "clamp(3.3rem, 10vw, 6.6rem)",
       titleSecondarySize: "clamp(0.95rem, 2.3vw, 1.65rem)",
       titleMaxWidth: "60rem",
@@ -1451,7 +1658,8 @@ const parks = {
       eyebrow: "Featured Park",
       tagline:
         "A mountain park where an ancient reef rises straight out of the Chihuahuan Desert.",
-      landmarkLabel: "El Capitan and the Guadalupe range above the desert floor",
+      landmarkLabel:
+        "El Capitan and the Guadalupe range above the desert floor",
       titlePrimarySize: "clamp(2.7rem, 8.8vw, 6.2rem)",
       titleSecondarySize: "clamp(0.9rem, 2vw, 1.55rem)",
       titleMaxWidth: "68rem",
@@ -2119,7 +2327,8 @@ const parks = {
         body: "For millions of years, shifting environments laid down the sediments that became Zion's stone, from shallow seas and river systems to immense desert dunes. Later uplift raised the plateau, and the Virgin River gained the force to carve downward through those layers. What visitors see now is not a static canyon, but a landscape still being shaped by water, gravity, and time.",
         factLabel: "Geology",
         fact: "NPS describes Zion's famous cliffs as sandstone formed from ancient dune fields and notes that uplift gave the Virgin River the cutting power to excavate the canyon.",
-        scenicLabel: "Sandstone walls rising from canyon floor to plateau light",
+        scenicLabel:
+          "Sandstone walls rising from canyon floor to plateau light",
         image: {
           src: "./assets/ZION/zion-story-1.jpg",
           alt: "Massive sandstone cliffs rising above the canyon floor in Zion National Park",
@@ -2279,7 +2488,9 @@ const COLOR_MODE_STORAGE_KEY = "parkAtlasColorMode";
 
 function getInitialColorMode() {
   try {
-    return window.localStorage.getItem(COLOR_MODE_STORAGE_KEY) === "light" ? "light" : "dark";
+    return window.localStorage.getItem(COLOR_MODE_STORAGE_KEY) === "light"
+      ? "light"
+      : "dark";
   } catch {
     return "dark";
   }
@@ -2335,7 +2546,10 @@ function updateThemeToggle() {
   const nextMode = isLightMode ? "Dark mode" : "Light mode";
 
   themeToggle.textContent = nextMode;
-  themeToggle.setAttribute("aria-label", `Current mode: ${state.colorMode}. Switch to ${nextMode.toLowerCase()}`);
+  themeToggle.setAttribute(
+    "aria-label",
+    `Current mode: ${state.colorMode}. Switch to ${nextMode.toLowerCase()}`,
+  );
   themeToggle.setAttribute("aria-pressed", String(isLightMode));
 }
 
@@ -2407,7 +2621,9 @@ function sceneStyle(art) {
 }
 
 function getSortedParkEntries() {
-  return Object.entries(parks).sort(([, a], [, b]) => a.name.localeCompare(b.name));
+  return Object.entries(parks).sort(([, a], [, b]) =>
+    a.name.localeCompare(b.name),
+  );
 }
 
 function getStoryImages() {
@@ -2442,7 +2658,7 @@ function renderHomeImageGlobe() {
       const spin = index % 2 === 0 ? "5deg" : "-5deg";
       const duration = 15 + (index % 7) * 2.2;
       const delay = -1 * (index % 11) * 1.25;
-      const scale = 0.88 + (ring * 0.08);
+      const scale = 0.88 + ring * 0.08;
       const depth = 1 + (index % 5);
       const size = [
         "clamp(4.7rem, 9vw, 8.5rem)",
@@ -2520,19 +2736,33 @@ function renderHeroStage(park) {
     park.hero.titleSecondarySize
       ? `--hero-title-secondary-size: ${park.hero.titleSecondarySize};`
       : "",
-    park.hero.titleMaxWidth ? `--hero-title-max-width: ${park.hero.titleMaxWidth};` : "",
-    park.hero.titleOffsetY ? `--hero-title-offset-y: ${park.hero.titleOffsetY};` : "",
-    park.hero.titleAlign ? `--hero-title-text-align: ${park.hero.titleAlign};` : "",
-    park.hero.titleJustify ? `--hero-title-justify: ${park.hero.titleJustify};` : "",
-    park.hero.titleMargin ? `--hero-title-margin: ${park.hero.titleMargin};` : "",
+    park.hero.titleMaxWidth
+      ? `--hero-title-max-width: ${park.hero.titleMaxWidth};`
+      : "",
+    park.hero.titleOffsetY
+      ? `--hero-title-offset-y: ${park.hero.titleOffsetY};`
+      : "",
+    park.hero.titleAlign
+      ? `--hero-title-text-align: ${park.hero.titleAlign};`
+      : "",
+    park.hero.titleJustify
+      ? `--hero-title-justify: ${park.hero.titleJustify};`
+      : "",
+    park.hero.titleMargin
+      ? `--hero-title-margin: ${park.hero.titleMargin};`
+      : "",
     park.hero.titlePrimaryWhiteSpace
       ? `--hero-title-primary-white-space: ${park.hero.titlePrimaryWhiteSpace};`
       : "",
     park.hero.titleSecondaryWhiteSpace
       ? `--hero-title-secondary-white-space: ${park.hero.titleSecondaryWhiteSpace};`
       : "",
-    park.hero.titleStartY ? `--hero-title-start-y: ${park.hero.titleStartY};` : "",
-    park.hero.titleTravelY ? `--hero-title-travel-y: ${park.hero.titleTravelY};` : "",
+    park.hero.titleStartY
+      ? `--hero-title-start-y: ${park.hero.titleStartY};`
+      : "",
+    park.hero.titleTravelY
+      ? `--hero-title-travel-y: ${park.hero.titleTravelY};`
+      : "",
     park.hero.titleTransformOrigin
       ? `--hero-title-transform-origin: ${park.hero.titleTransformOrigin};`
       : "",
@@ -2549,9 +2779,11 @@ function renderHeroStage(park) {
   `;
 
   if (park.hero.media?.background && park.hero.media?.foreground) {
-    const backgroundPosition = park.hero.media.backgroundPosition || "center 28%";
+    const backgroundPosition =
+      park.hero.media.backgroundPosition || "center 28%";
     const backgroundInset = park.hero.media.backgroundInset || "-4%";
-    const backgroundParallaxSpeed = park.hero.media.backgroundParallaxSpeed || "0.04";
+    const backgroundParallaxSpeed =
+      park.hero.media.backgroundParallaxSpeed || "0.04";
     const backgroundScale =
       park.hero.media.backgroundScale ||
       "calc(1.08 - (var(--hero-progress, 0) * 0.04))";
@@ -2584,13 +2816,16 @@ function renderHeroStage(park) {
     const foregroundLeft = park.hero.media.foregroundLeft || "50%";
     const foregroundNodeX = park.hero.media.foregroundNodeX || "-50%";
     const foregroundFit = park.hero.media.foregroundFit || "contain";
-    const foregroundPosition = park.hero.media.foregroundPosition || "center center";
-    const foregroundParallaxSpeed = park.hero.media.foregroundParallaxSpeed || "0.08";
+    const foregroundPosition =
+      park.hero.media.foregroundPosition || "center center";
+    const foregroundParallaxSpeed =
+      park.hero.media.foregroundParallaxSpeed || "0.08";
     const foregroundScale =
       park.hero.media.foregroundScale ||
       "calc(1.01 - (var(--hero-progress, 0) * 0.02))";
     const foregroundFilter =
-      park.hero.media.foregroundFilter || "drop-shadow(0 16px 34px rgba(0, 0, 0, 0.28))";
+      park.hero.media.foregroundFilter ||
+      "drop-shadow(0 16px 34px rgba(0, 0, 0, 0.28))";
     const foregroundTravel = park.hero.media.foregroundTravel || "14vh";
 
     return `
@@ -2971,7 +3206,8 @@ function bindEvents() {
 
     if (randomTrigger) {
       const parkEntries = getSortedParkEntries();
-      const randomEntry = parkEntries[Math.floor(Math.random() * parkEntries.length)];
+      const randomEntry =
+        parkEntries[Math.floor(Math.random() * parkEntries.length)];
       setActivePark(randomEntry[0]);
       return;
     }
