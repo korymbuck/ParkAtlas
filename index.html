@@ -47,13 +47,15 @@
           Parks
         </button>
 
-        <button class="brand-lockup brand-button" id="homeButton" type="button" aria-label="Return to Park Atlas home">
-          <span class="brand-kicker">Park Atlas</span>
-          <span class="brand-note">Cinematic national park stories</span>
-        </button>
+        <div class="topbar-center" id="topbarCenter" aria-live="polite">
+          <span class="brand-kicker" id="topbarTitle">Park Atlas</span>
+          <span class="brand-note" id="topbarSubtitle">Cinematic national park stories</span>
+        </div>
 
         <div class="topbar-actions">
-          <div class="current-park-meta" id="currentParkMeta" aria-live="polite"></div>
+          <button class="home-nav-button" id="homeButton" type="button" hidden>
+            Home
+          </button>
           <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
             Light mode
           </button>

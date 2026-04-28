@@ -2297,9 +2297,11 @@ const parkList = document.getElementById("parkList");
 const parkDrawer = document.getElementById("parkDrawer");
 const drawerBackdrop = document.getElementById("drawerBackdrop");
 const menuButton = document.getElementById("menuButton");
+const topbarCenter = document.getElementById("topbarCenter");
+const topbarTitle = document.getElementById("topbarTitle");
+const topbarSubtitle = document.getElementById("topbarSubtitle");
 const homeButton = document.getElementById("homeButton");
 const drawerClose = document.getElementById("drawerClose");
-const currentParkMeta = document.getElementById("currentParkMeta");
 const themeToggle = document.getElementById("themeToggle");
 
 let parallaxNodes = [];
@@ -2656,15 +2658,21 @@ function renderDrawer() {
 }
 
 function renderHomeMeta() {
-  currentParkMeta.textContent = "";
-  currentParkMeta.classList.add("is-empty");
-  currentParkMeta.setAttribute("aria-hidden", "true");
+  document.body.classList.add("is-home-page");
+  document.body.classList.remove("is-park-page");
+  topbarCenter.classList.remove("is-park-meta");
+  topbarTitle.textContent = "Park Atlas";
+  topbarSubtitle.textContent = "Cinematic national park stories";
+  homeButton.hidden = true;
 }
 
 function renderMeta(park) {
-  currentParkMeta.classList.remove("is-empty");
-  currentParkMeta.removeAttribute("aria-hidden");
-  currentParkMeta.innerHTML = `<strong>${park.shortName}</strong>${park.location}`;
+  document.body.classList.add("is-park-page");
+  document.body.classList.remove("is-home-page");
+  topbarCenter.classList.add("is-park-meta");
+  topbarTitle.textContent = park.shortName;
+  topbarSubtitle.textContent = park.location;
+  homeButton.hidden = false;
 }
 
 function renderHomePage() {

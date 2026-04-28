@@ -122,8 +122,8 @@ button {
 }
 
 .menu-button,
-.brand-button,
 .drawer-close,
+.home-nav-button,
 .theme-toggle,
 .cta-button,
 .home-secondary-button,
@@ -133,6 +133,7 @@ button {
 }
 
 .menu-button {
+  grid-column: 1;
   display: inline-flex;
   align-items: center;
   gap: 0.7rem;
@@ -160,21 +161,15 @@ button {
   background: currentColor;
 }
 
-.brand-lockup {
-  justify-self: center;
+.topbar-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 0;
+  max-width: min(48vw, 36rem);
   text-align: center;
-}
-
-.brand-button {
-  padding: 0.25rem 0.6rem;
-  border: 0;
-  border-radius: 999px;
-  background: transparent;
-  color: inherit;
-}
-
-.brand-button:hover .brand-kicker {
-  color: var(--accent);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
 }
 
 .brand-kicker,
@@ -194,6 +189,9 @@ button {
 .brand-note {
   display: block;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .brand-kicker {
@@ -206,30 +204,25 @@ button {
   color: var(--muted);
 }
 
+.topbar-center.is-park-meta .brand-kicker {
+  color: var(--text);
+  font-size: clamp(0.82rem, 1.3vw, 1rem);
+  letter-spacing: 0.14em;
+}
+
+.topbar-center.is-park-meta .brand-note {
+  color: var(--accent-bright);
+}
+
 .topbar-actions {
+  grid-column: 3;
   justify-self: end;
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
-.current-park-meta {
-  min-width: 12rem;
-  text-align: right;
-  font-size: 0.84rem;
-  color: var(--muted);
-}
-
-.current-park-meta.is-empty {
-  display: none;
-}
-
-.current-park-meta strong {
-  display: block;
-  font-size: 1rem;
-  color: var(--text);
-}
-
+.home-nav-button,
 .theme-toggle {
   display: inline-flex;
   align-items: center;
@@ -250,6 +243,15 @@ button {
     transform 220ms ease;
 }
 
+.home-nav-button {
+  min-width: 5.6rem;
+}
+
+.home-nav-button[hidden] {
+  display: none;
+}
+
+.home-nav-button:hover,
 .theme-toggle:hover {
   transform: translateY(-0.05rem);
   border-color: color-mix(in srgb, var(--accent) 60%, var(--line));
@@ -261,12 +263,14 @@ body.light-mode .topbar {
 }
 
 body.light-mode .menu-button,
+body.light-mode .home-nav-button,
 body.light-mode .theme-toggle {
   background: rgba(255, 255, 255, 0.58);
   box-shadow: 0 14px 36px -30px rgba(28, 38, 35, 0.55);
 }
 
 body.light-mode .menu-button:hover,
+body.light-mode .home-nav-button:hover,
 body.light-mode .theme-toggle:hover {
   background: rgba(255, 255, 255, 0.82);
 }
@@ -1414,8 +1418,8 @@ body.light-mode .hero-title-secondary {
     grid-template-columns: auto minmax(0, 1fr) auto;
   }
 
-  .current-park-meta {
-    display: none;
+  .topbar-center {
+    max-width: 42vw;
   }
 
   .cta-panel,
@@ -1487,6 +1491,7 @@ body.light-mode .hero-title-secondary {
   }
 
   .menu-button,
+  .home-nav-button,
   .theme-toggle {
     padding: 0.75rem 0.8rem;
     font-size: 0.72rem;
@@ -1494,6 +1499,14 @@ body.light-mode .hero-title-secondary {
 
   .theme-toggle {
     min-width: 6.2rem;
+  }
+
+  .home-nav-button {
+    min-width: 4.5rem;
+  }
+
+  body.is-park-page .topbar-center {
+    max-width: 30vw;
   }
 
   .brand-note {
